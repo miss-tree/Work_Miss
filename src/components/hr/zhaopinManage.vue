@@ -1,0 +1,31 @@
+<template>
+	<div>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>		    
+		    <h1 class="mui-title">招聘管理</h1>
+		</header>
+		<div class="mui-content">
+			<div>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<router-link class="mui-navigate-right" to="/zhaopinList">
+							招聘记录
+						</router-link>
+					</li>
+					<li class="mui-table-view-cell">
+						<router-link class="mui-navigate-right" to="/jobApply">
+							申请记录
+						</router-link>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</template>
+
+<script>
+</script>
+
+<style>
+</style>

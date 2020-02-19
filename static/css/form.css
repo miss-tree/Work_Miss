@@ -1,0 +1,184 @@
+/*表单提交按钮*/
+.submitBtn {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/*列表选项卡*/
+
+#singList {
+	border-top: 1px solid #c8c7cc;
+	border-bottom: 1px solid #c8c7cc;
+}
+
+#singList .active {
+	width: 60px;
+	background-color: #fff;
+	color: #6596cc;
+	text-align: center;
+}
+
+.tabHead ul {
+	display: flex;
+	justify-content: space-around;
+	height: 40px;
+	line-height: 40px;
+}
+
+.tabHead ul .active {
+	font-weight: 600;
+	position: relative;
+}
+
+.tabHead ul .active::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #6596cc;
+}
+
+/*表单选项卡*/
+.tabHead {
+	padding: 0 15px;
+	background-color: #fff;
+	margin-top: 10px;
+}
+
+.tabHead div {
+	display: inline-block;
+	line-height: 25px;
+	font-size: 15px;
+	padding: 0 10px;
+}
+
+.tabHead .active {
+	background-color: #6596cc;
+	color: #fff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.filter-list li.filter-selected {
+	background-color: #9096a3;
+}
+
+.filter-text {
+	height: 36px;
+	margin-top: 2px;
+}
+
+.filter-list {
+	text-align: left;
+	max-height: 200px;
+}
+
+.filter-text .filter-title {
+	text-align: right;
+}
+
+.mui-card {
+	margin: 0;
+}
+
+.mui-table-view-cell.mui-collapse .mui-collapse-content {
+	padding: 0;
+}
+
+.ul_List .tableList {
+	border-top: 1px #ddd solid;
+}
+
+.ul_List .tableList:first-of-type {
+	border-top: 0;
+}
+
+#where .flex_grow {
+	border: 0;
+}
+
+#where .span_title,
+#where .right_time {
+	font-size: 15px;
+}
+
+table tr .col_10 {
+	text-align: center;
+}
+
+.form_row_right .mui-btn {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.form_row .form_row_right label {
+	display: inline-block;
+}
+
+#proSelect,
+#filter-box {
+	position: relative;
+}
+
+.border_bottom {
+	border-bottom: 1px #c8c7cc solid;
+}
+
+.filter-text {
+	height: 36px;
+	margin-top: 2px;
+}
+
+.mui-card {
+	margin: 0;
+}
+
+.mui-table-view-cell.mui-collapse .mui-collapse-content {
+	padding: 0;
+}
+
+.ul_List .tableList {
+	border-top: 1px #ddd solid;
+}
+
+.ul_List .tableList:first-of-type {
+	border-top: 0;
+}
+
+#where .flex_grow {
+	border: 0;
+}
+
+#where .span_title,
+#where .right_time {
+	font-size: 15px;
+}
+
+.form_row_right .mui-btn {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.form_row .mui-btn {
+	line-height: 25px;
+}
+
+#singList {
+	border-top: 1px solid #c8c7cc;
+	border-bottom: 1px solid #c8c7cc;
+}
+
+#singList .active {
+	width: 60px;
+	background-color: #fff;
+	color: #6596cc;
+	text-align: center;
+}
+
+.form_row_right label {
+	width: 30%;
+	position: relative;
+}
