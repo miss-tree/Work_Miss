@@ -3,7 +3,6 @@
     <div class="mongolia" v-show="topLayer" @click="closeAlert"></div>
     <!--蒙层-->
     <div>
-      <!--<div class="form_title">破损记录</div>-->
       <div class="form_div">
         <div class="form_row">
           <label class="form_row_left huise" for>
@@ -87,7 +86,6 @@
                       <span class="span_red"></span>
                     </span>
                   </div>
-                  <!--<input type="text" class="form_row_right" name="WHERE"  v-model="damageList.bz"/>-->
                   <div class="padding-lr padding_bb">
                     <textarea
                       class="textarea"
@@ -176,14 +174,6 @@ export default {
       } else {
         mui.confirm("你确定要删除订单", "提示", ["取消", "确定 "], e => {
           if (e.index == 1) {
-//          this.ORDERPRO.forEach((el, index) => {
-//            if (this.checkData.indexOf(el.name) != -1) {
-//              this.checkData = this.checkData.filter(row => {
-//                return row != el.name;
-//              });
-//              this.ORDERPRO.splice(index, 1);
-//            }
-//          });
 						that.list=that.list.filter((el,index)=>{
 								return that.checkData.includes(el.name)==false
 							})
@@ -249,7 +239,6 @@ export default {
               return false;
             } else {
               this.list.push(this.damageList);
-              //this.selectPro = "";
               this.damageList = {
                 name: "",
                 Pnumber: "",
@@ -266,6 +255,3 @@ export default {
   }
 };
 </script>
-
-<style>
-</style>

@@ -3,13 +3,6 @@
 		<div class="" v-for="(item,index) in INFOR">
 			<div class="form_title">产品({{index+1}})</div>
 			<div class="form_div">
-				<!--<div class="form_row">
-					<label class="form_row_left huise" id="phone">
-		    				订单号
-		    				<span class="span_red"></span>
-		    			</label>
-					<div class="form_row_right">{{item.orderNum}}</div>
-				</div>-->
 				<div class="form_row">
 					<label class="form_row_left huise">
 		    				产品名称
@@ -138,7 +131,6 @@
 					<span class="span_15px">产品数量：{{INFOR.length}}</span>
 					<span class="span_15px" style="margin-left: 5px;">开票金额：{{MONEY}}</span>
 				</div>
-				<!--<div class="mui-btn mui-btn-primary applyBtn" @click="routerTo">申请</div>-->
 			</div>
 		</div>
 	</div>
@@ -166,7 +158,3 @@
 		  }
 	}
 </script>
-
-<style>
-
-</style>

@@ -44,11 +44,8 @@
 </template>
 
 <script>
-	import getTop from "../assembly/getTop.vue"; /*回到顶部*/
 	import storeMsg from "./views/agree-detail.vue"
 	import proName from "./views/agree-pro-detail.vue"
-	import lookimg from "../assembly/lookimg.vue"
-	import timeLine from "../assembly/timeLine.vue"; /*流程进度*/
 	export default{
 		data(){
 			return{
@@ -67,7 +64,7 @@
 				],
 			}
 		},
-		components:{getTop,storeMsg,lookimg,proName,timeLine},
+		components:{storeMsg,proName},
 		computed:{
 			changeVal(){
 				console.log('hi')

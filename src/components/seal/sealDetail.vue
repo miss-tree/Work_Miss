@@ -109,15 +109,9 @@
 					</div>
 					<div class="padding-lr padding_bb">
 						<div class="detail_bz">{{BZ}}</div>
-						<!--<textarea class="textarea" readonly="readonly" cols="38" v-model="BZ"></textarea>-->
 					</div>
-					<!--<div class="bottomOver"></div>-->
 				</div>
 				<!--图片上传-->
-	        	<!--<div class="form_title">附件(个人手机需要安装解压软件)</div>
-	        	<div class="form_div" style="padding: 15px 0;">																																				
-		        	<lookimg :images="IMAGES" :fileArr="FILEARR"></lookimg>
-	        	</div>-->
 	        	<div class="bottomOver"></div>
 	        	<div class="form_title">
 		    		审核进度
@@ -125,17 +119,6 @@
 		       	 <time-line :examInfor="EXAMINFOR"></time-line>
 		        </div>
 	        	<!--图片上传结束-->
-				<!--<div style="height: 50px"></div>-->
-	        	<!--<div class="form_div" style="padding: 15px 0;">																																				
-		        	<uploadpic></uploadpic>
-	        	</div>
-	        	<div class="bottomOver"></div>-->
-	        	<!--图片上传结束-->
-				<!--备注结束-->
-	    		<!--<div class="submitBtn">
-	    			<button type="button" style="width: 80%; padding: 10px;" id="update"  @click=""
-	    				class="mui-btn update mui-btn-block mui-btn-primary">查看</button>
-	    		</div>-->
 		    </div>
 	    </div>
 	</div>
@@ -143,10 +126,7 @@
 
 <script>
 	import uploadpic from "./views/uploadpic.vue"
-	import getTop from "../assembly/getTop.vue"; /*回到顶部*/
 	import lookimg from "./views/lookFile.vue"/*图片查看*/
-	import timeLine from "../assembly/timeLine.vue"; /*流程进度*/
-//	import {mustFill,getDate} from '../../../static/utils/public.js'
 	export default{
 		data(){
 			return{
@@ -209,13 +189,10 @@
 				}],//输入历史
 			}
 		},
-		components:{uploadpic,lookimg,getTop,timeLine},
+		components:{uploadpic,lookimg},
 		mounted(){
 		},
 		methods:{
 		}
 	}
 </script>
-
-<style>
-</style>

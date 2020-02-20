@@ -2,11 +2,9 @@
 	<div>
 		<!--订单列表-->
 		<div class="dateRow" v-for="(item,index) in ORDERLIST" ><!--@click="routerTo(item,index)"-->
-			<!--<div class="width35px">-->
 				<div class="mui-table-cell mui-col-xs-2 mui-checkbox width35px">
 					<input name="checkbox" class="input_middle" :value="item.id" v-model="checkData" @click="setInfor" type="checkbox"/>
 				</div>
-			<!--</div>-->
 			<div class="dateRowGrow">
 				<div class="dateRowRight">
 					<div class="huise dateRow_left">{{item.orderNum}}</div>
@@ -39,7 +37,6 @@
 		props: ["ORDERLIST"],
 		watch:{
 			checkData(newVal,oldVal){
-				//console.log(newVal)
 				if(this.checkData.length!=0){
 					this.checkInfor=[]
 					this.ORDERLIST.forEach((el,index)=>{
@@ -64,6 +61,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

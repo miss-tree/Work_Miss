@@ -4,7 +4,6 @@
 		<div class="alert_bottom_div height_40px">
             <div class="flex" style="border-top: 1px solid #ddd;">
               <div @click="resetCkeck()">重置</div>
-              <!--<div @click="setChang()">取消</div>-->
               <div @click="setChang()">确定</div>
             </div>
         </div>
@@ -17,43 +16,36 @@
 					:class="{active:curIndex==0,getSearch:dateCheck!=''}"
 					@click="curIndex=0">
 					<div>操作方式</div>
-					<!--<div >{{dateCheck}}</div>-->
 				</div>
 				<div class="screen_table_left_div"
 					:class="{active:curIndex==1,getSearch:selectCheck.length!=''}"
 					@click="curIndex=1">
 					<div>开单公司</div>
-					<!--<div>{{selectCheck}}</div>-->
 				</div>
 				<div class="screen_table_left_div"
 					:class="{active:curIndex==6,getSearch:PART!=''}"
 					@click="curIndex=6">	
 					<div>部门</div>
-					<!--<div>{{PART}}</div>-->
 				</div>
 				<div class="screen_table_left_div"
 					:class="{active:curIndex==2,getSearch:setDate!=''}"
 					@click="curIndex=2">	
 					<div>时间段</div>
-					<!--<div>{{setDate}}</div>-->
 				</div>
 				<div class="screen_table_left_div"
 					:class="{active:curIndex==3,getSearch:PRONAME.length!=0}"
 					@click="curIndex=3">	
 					<div>产品选择</div>
-					<!--<div><span v-for="item in PRONAME">{{item}}、</span></div>-->
 				</div>
 				<div class="screen_table_left_div"
 					:class="{active:curIndex==4,getSearch:NATURE.length!=0}"
 					@click="curIndex=4">	
 					<div>经营性质</div>
-					<!--<div><span v-for="item in NATURE">{{item}}、</span></div>-->
 				</div>
 				<div class="screen_table_left_div"
 					:class="{active:curIndex==5,getSearch:HANDLE!=''}"
 					@click="curIndex=5">	
 					<div>控销</div>
-					<!--<div>{{HANDLE}}</div>-->
 				</div>
 			</div>
 			<!--左边-->
@@ -377,18 +369,6 @@ import {selectTime,getTime,getDate,DateAdd,selecTion} from "../../../../static/u
 		          label: 'label'
 		        }
 			}
-		},
-		watch:{
-//			STARTDATE(newVal,oldVal){
-//				if(newVal){
-//					this.setDate=newVal+'至'+this.ENDDATE
-//				}
-//			},
-//			ENDDATE(newVal,oldVal){
-//				if(newVal){
-//					this.setDate=this.ENDDATE+'至'+newVal
-//				}
-//			},
 		},
 		mounted(){
 			selectTime();

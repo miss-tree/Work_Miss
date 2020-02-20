@@ -64,24 +64,11 @@
 		<!--资信额度结束-->
 	</div>
 </template>
-<!--/*
-	 *资信额度内部组件
-	 *
-     * 
-     */*/-->
 <script>
 	export default {
-		data() {
-			return {
-			}
-		},
 		props:["KEHUINFOR"],
 		methods: {
 			
 		}
 	}
 </script>
-
-<style>
-
-</style>

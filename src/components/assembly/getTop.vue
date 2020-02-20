@@ -30,11 +30,7 @@
 		    },
 		    getScrollTop(){//获取滚动高度
 		      this.scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-		      //console.log(this.scrollTop)
 		    }
 		}
 	}
 </script>
-
-<style>
-</style>

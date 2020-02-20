@@ -109,12 +109,8 @@ export default {
   computed: {
     add_tatol() {
       	console.log(this.Travel.map(row => row.tatol))
-//    if (this.Travel.map(row => row.tatol) == "NaN") {
-//      return 0;
-//    } else {
         return this.Travel.map(row => row.tatol).reduce(
         	(acc, cur) => parseFloat(cur) + acc,0);
-//    }
     }
   },
   mounted() {
@@ -137,7 +133,3 @@ export default {
   }
 };
 </script>
-
-<style>
-
-</style>

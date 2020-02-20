@@ -111,7 +111,6 @@
 </template>
 
 <script>
-//	import
 export default {
   data() {
     return {
@@ -131,7 +130,6 @@ export default {
     		if(oldVal.length>newVal.length){
     			oldVal.forEach((el,index)=>{
     				if(newVal.indexOf(el)<0){//选出去掉的模块
-    					//console.log(oldVal[index])
     					var delMoudle=oldVal[index]
     					USERINFOR.forEach((el,index)=>{
     						if(el.title==delMoudle){
@@ -179,15 +177,7 @@ export default {
     		return powerArr
     	},
   	setPower(){
-  		
-//		this.$store.commit("setUSER_ROLE",{
-//				USER_ROLE:this
-//			});
   	}
   }
 };
 </script>
-
-<style>
-	
-</style>

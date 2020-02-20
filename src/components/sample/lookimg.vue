@@ -6,7 +6,6 @@
 			<h1 class="mui-title"><!--<img src="../assets/logo.png" class="logo"/>-->图片查看</h1>
 		</header>
 		<div class="mui-content">
-			<!--<van-button type="default">默认按钮</van-button>-->
 			<ul>
 				<li v-for="(item,index) in images" @click="changeShow(index)"><img :src="item"/></li>
 			</ul>
@@ -36,14 +35,6 @@
 		},
 		mounted() {},
 		methods: {
-//			getImg(images,index){
-//		      preview({
-//		          images:this.images,
-//		          showIndex:true,
-//		          loop:false,
-//		          startPosition:index
-//		      })
-//		    }, 
 			changeShow(index){
 				this.show=true
 				this.index=index

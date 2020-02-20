@@ -10,36 +10,6 @@
             </div>
           </div>
           <div class="formTable">
-            <!--<div class="form_title">申请日期</div>
-            <div class="form_div">
-              <div class="alertRow">
-                <input type="text" id="start856" data-options='{"type":"date"}'
-                	class="btn mui-btn-block alertInput" 
-                	placeholder="选择日期 ..." 
-                	v-model="STARTDATE">
-                <span>-</span>
-                <input type="text" id="end978" data-options='{"type":"date"}'
-                	class="btn mui-btn-block alertInput" 
-                	placeholder="选择日期 ..." 
-                	v-model="ENDDATE">
-              </div>
-              <div class="alertRow" id="checkBox" style="padding-bottom: 5px;">
-                <div class="form_row_right flex justify_content">
-                  <label @click="today()">
-                    <input type="radio" name="CHECKTIME" value="今天" v-model="CHECKTIME">
-                    <div class="row_button">今天</div>
-                  </label>
-                  <label @click="yesterday()">
-                    <input type="radio" name="CHECKTIME" value="昨天" v-model="CHECKTIME">
-                    <div class="row_button">昨天</div>
-                  </label>
-                  <label @click="weekly()">
-                    <input type="radio" name="CHECKTIME" value="近七天" v-model="CHECKTIME">
-                    <div class="row_button">近七天</div>
-                  </label>
-                </div>
-              </div>
-            </div>-->
             <div class="form_title">是否医保</div>
             <div class="form_div padding_tb_5px">
               <div class="alertRow" id="checkBox">
@@ -55,33 +25,6 @@
                 </div>
               </div>
             </div>
-            <!--<div class="form_title">申请状态</div>
-            <div class="form_div padding_tb_5px">
-              <div class="alertRow">
-                <div class="form_row_right flex justify_content">
-                <label>
-                    <input type="checkbox" name="CHECKSTATE" value="草稿" v-model="CHECKSTATE">
-                    <div class="row_button">草稿</div>
-                  </label>
-                  <label>
-                    <input type="checkbox" name="CHECKSTATE" value="待审" v-model="CHECKSTATE">
-                    <div class="row_button">待审</div>
-                  </label>
-                  <label>
-                    <input type="checkbox" name="CHECKSTATE" value="通过" v-model="CHECKSTATE">
-                    <div class="row_button">通过</div>
-                  </label>
-                </div>
-              </div>
-              <div class="alertRow" style="margin-top: 8px;">
-                <div class="form_row_right flex justify_content">
-                  <label>
-                    <input type="checkbox" name="CHECKSTATE" value="驳回" v-model="CHECKSTATE">
-                    <div class="row_button">驳回</div>
-                  </label>
-                </div>
-              </div>	
-            </div>-->
             <div class="form_title">其他</div>
             <div class="form_div padding_tb_5px">
               <div class="form_row">
@@ -213,6 +156,3 @@ import {selectTime,PopPicker,getDate,DateAdd,selecTion} from "../../../../../sta
 		}
 	}
 </script>
-
-<style>
-</style>

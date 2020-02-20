@@ -11,7 +11,6 @@
       <div class="tableSearch">
         <div style="width: 70%;">
           <input type="text" name id="search" value placeholder="请输入关键字(代码联想)">
-          <!--<i class="iconfont icon-sousuo3"></i>-->
         </div>
         <div class="searchBtn" @click="alert()" style="width: 60px;">搜索</div>
         <div style="margin-left: 15px;" @click="alert()">
@@ -105,7 +104,6 @@ export default {
   	search,
   },
   mounted() {
-    //var that=this
     this.$data.sureTime = getTime();
     selectTime();
     selecTion("part", this.sectionArr);

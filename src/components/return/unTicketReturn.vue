@@ -166,8 +166,6 @@
 </template>
 
 <script>
-import "../../../static/utils/selectFilter.js"; /*自定义下拉框*/
-import "../../../static/css/selectFilter.css";
 import { mustFill } from "../../../static/utils/public.js";
 import returndetail from "./views/order-list-detail.vue"; /*退货订单详情*/
 import returnadd from "./views/order-return-add.vue"; /*添加退货*/
@@ -298,6 +296,3 @@ export default {
   }
 };
 </script>
-
-<style>
-</style>

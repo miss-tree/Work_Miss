@@ -35,7 +35,6 @@
 </template>
 
 <script>
-	import getTop from "../assembly/getTop.vue"; /*回到顶部*/
 	import storeMsg from "./receiptViews/rece-detail.vue"
 	import proName from "./receiptViews/rece-pro-detail.vue"
 	export default{
@@ -55,9 +54,6 @@
 				ph:"TH65962156",beginTime:"2019-08-27",endTime:"2021-08-26",picNum:0,orderNum:'2019072342'},],
 			}
 		},
-		components:{getTop,storeMsg,proName},
+		components:{storeMsg,proName},
 	}
 </script>
-
-<style>
-</style>

@@ -25,11 +25,8 @@
 					<li class="timeline_li">
 						<div class="line"></div>
 						<div class="line_icon line_icon--normal line_icon--" style="background-color: rgb(11, 189, 135);">
-							<!---->
 						</div>
-						<!---->
 						<div class="line_right">
-							<!---->
 							<div class="line_content">
 								复审
 								<span>审核意见：明细不清明细不清明细不清明细不清明细不清明细不清明细不清明细不清明细不清明细不清明细不清明细不清明细不清</span>
@@ -42,11 +39,8 @@
 					<li class="timeline_li">
 						<div class="line"></div>
 						<div class="line_icon line_icon--large line_icon--">
-							<!---->
 						</div>
-						<!---->
 						<div class="line_right">
-							<!---->
 							<div class="line_content">
 								人资审核
 							</div>
@@ -58,11 +52,8 @@
 					<li class="timeline_li">
 						<div class="line"></div>
 						<div class="line_icon line_icon--normal line_icon--">
-							<!---->
 						</div>
-						<!---->
 						<div class="line_right">
-							<!---->
 							<div class="line_content">
 								提交申请
 							</div>
@@ -77,20 +68,6 @@
 	<!--功能组件-->
 	</div>
 </template>
-
-<script>
-	export default{
-		data(){
-			return{
-			}
-		},
-		methods:{
-//			jump(){
-//				this.$router.go(-1)
-//			}
-		}
-	}
-</script>
 
 <style>
 	.time_line_div{

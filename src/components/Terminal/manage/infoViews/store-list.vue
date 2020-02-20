@@ -4,12 +4,6 @@
 		<div>
 			<div id="dateTable">
 				<div class="Row">
-					<!--<div class="col_5">
-						<label class="bui-checkbox-label bui-checkbox-anim">
-						    <input type="checkbox" name="all"  @click="setAllCheck">
-							<i class="bui-checkbox"></i>
-						</label>
-					</div>-->
 					<div class="col_50">药店名称</div>
 					<div class="col_20">医保</div>
 					<div class="col_15">级别</div>
@@ -17,12 +11,6 @@
 				</div>
 				<div id="">
 					<div class="row" v-for="(item,index) in ORDERLIST">
-						<!--<div class="col_5 text_algin" @click="setInfor">
-							<label class="bui-checkbox-label bui-checkbox-anim">
-							    <input type="checkbox" name="ticket" v-model="checkData":disabled="item.state!='草稿'" :value="item.id">
-							    <i class="bui-checkbox"></i>
-							</label>
-						</div>-->
 						<div class="col_50" style="text-align: left;">
 							<span class="span_13px nowrap" style="display: block;overflow: hidden;">{{item.title}}</span>
 						</div>
@@ -85,13 +73,7 @@
 				this.$router.push({path:"/storeDetail",query:{id:item.id}})
 			},
 			setInfor(){//设置组件传递的参数
-//				setTimeout(()=>{
-//					this.$emit("getCheck",this.checkInfor)
-//				},20)
 			}
 		}
 	}
 </script>
-
-<style>
-</style>

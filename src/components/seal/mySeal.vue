@@ -7,13 +7,6 @@
     </header>
     <!--头部结束-->
     <div class="mui-content">
-    	<!--指引-->
-    	<!--<div v-show="isFirst">
-    		<div class="mongolia"></div>
-    		<div @click="setGuide()">
-	    		<img src="../../../static/assets/guide1.png" style="position: fixed;z-index: 39;top: 50px;left: 20px;width: 230px;height: 230px;"/>
-    		</div>
-    	</div>-->
       <!--搜索框-->
       <div class="tableSearch justify_content">
       	<inputcode @searchVal="getClientName" style="width: 85%;"></inputcode>
@@ -26,9 +19,6 @@
       </div>
       <div style="height: 51px;"></div>
       <!--订单列表-->
-      <!--<div class="messageDiv" v-show="clientName==''">
-				<div class="huise showMessage">请先选择客户名称搜索！</div>
-			</div>-->
 		<div>
 			<list :ORDERLIST="ORDER" @getCheck="getCheckInfor"></list>
 			<!--显示申请-->
@@ -40,14 +30,11 @@
 			</div>
 		</div>
       <!--订单列表结束-->
-      <!--<pages></pages>-->
-      <!--分页结束-->
     </div>
   </div>
 </template>
 
 <script>
-import pages from "../assembly/pagination.vue";/*分页*/
 import search from "./views/seal-list-search.vue";/*搜索*/
 	import inputcode from "./views/inputcode.vue"/*联想搜索框*/
 	import list from "./views/seal-list.vue"/*列表*/
@@ -80,19 +67,13 @@ export default {
 			{title:"粤东客户信息变更",state:'待审',person:'吕布',dateTime:'2017-07-01',id:65677},]
     };
   },
-  components: {
-    pages,search,inputcode,
-    list
-  },
+  components: {search,inputcode,list},
   created(){
   	const getStorage=localStorage.getItem("IS_FIRST_LOGIN")
   	if(getStorage){
   		this.isFirst=false
   		console.log("已经登陆过一次了")
   	}
-  },
-  mounted() {
-//  this.$data.sureTime = getTime();
   },
   methods: {
   		setGuide(){//点击指引
@@ -123,6 +104,3 @@ export default {
   }
 };
 </script>
-
-<style>
-</style>

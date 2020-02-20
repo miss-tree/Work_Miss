@@ -40,21 +40,6 @@
                 </div>
               </div>
             </div>
-            <!--<div class="form_title">促销活动</div>
-            <div class="form_div padding_tb_5px">
-              <div class="alertRow" id="checkBox">
-                <div class="form_row_right flex justify_content">
-                  <label>
-                    <input type="radio" name="ISCHECK" value="是" v-model="ISCHECK">
-                    <div class="row_button">是</div>
-                  </label>
-                  <label>
-                    <input type="radio" name="ISCHECK" value="否" v-model="ISCHECK">
-                    <div class="row_button">否</div>
-                  </label>
-                </div>
-              </div>
-            </div>-->
             <div class="form_title">申请状态</div>
             <div class="form_div padding_tb_5px">
               <div class="alertRow">

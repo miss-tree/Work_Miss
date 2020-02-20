@@ -230,9 +230,6 @@ export default {
 			mounted() {
 				carousel()
 			},
-  // components:{
-  // 	gongneng
-  // },
   methods: {
 //	编辑
 		editTable(index){
@@ -255,6 +252,3 @@ export default {
   }
 };
 </script>
-
-<style>
-</style>

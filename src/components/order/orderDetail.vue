@@ -51,7 +51,7 @@
 		    			</label>
 		    			<div class="form_row_right">{{COMPANY}}</div>
 		    		</div>
-		    		
+
 	    		</div>
 	    		<div>
 		    		<!--客户订单信息-->
@@ -79,11 +79,6 @@
 						<div class="detail_bz">{{BZ}}</div>
 					</div>
 				</div>
-				<!--备注结束-->
-	    		<!--<div style="text-align: center;margin-top: 15px; margin-bottom: 15px;">
-	    			<button type="button" style="width: 80%; padding: 10px;" id="update"  @click="mustFull"
-	    				class="mui-btn update mui-btn-block mui-btn-primary">提交</button>
-	    		</div>-->
 		    	<!--审核进度-->
 	    		<div class="form_title">
 	    			审核进度
@@ -95,12 +90,6 @@
 </template>
 
 <script>
-	import '../../../static/utils/selectFilter.js'		/*下拉选择框*/
-	import '../../../static/css/selectFilter.css'
-//	import {selectTime,PopPicker,mustFill,selecTion} from '../../../static/utils/public.js'
-	import getTop from "../assembly/getTop.vue"; /*回到顶部*/
-	import loading from "../assembly/loading.vue"; /*加载弹窗*/
-	import timeLine from "../assembly/timeLine.vue"	/*加载时间进程组件*/
 	import orderwhere from "./views/order-where.vue"/*订单收货信息*/
 	import lookdetail from "./views/look-order-detail.vue"/*订单信息*/
 	import creditLine from "./views/creditLine.vue"			/*资信额度*/
@@ -131,11 +120,11 @@
 							{progress:'复审',opinion:'驳回',bz:'明细不清明细不清明细不清明细不清',time:'2018-04-03 16:23'},
 							{progress:'人资审核',opinion:'同意',bz:'明细不清',time:'2018-04-02 09:16'},
 							{progress:'提交申请',opinion:'',bz:'',time:'2018-04-01 20:42'}],
-				params:''			
+				params:''
 			}
 		},
 		components:{
-			getTop,loading,timeLine,creditLine,orderwhere,lookdetail
+			creditLine,orderwhere,lookdetail
 		},
 		computed:{
 			total(){
@@ -200,18 +189,14 @@
 				this.editInfor=this.REINFOR[index]
 				this.editOrder.index=index
 				this.topLayer=true
-				this.editShow=true 
+				this.editShow=true
 			},
 			saveWhere(){//保存编辑后的收货信息
 				this.topLayer=false
 				this.whereShow=false
-				this.editShow=false 
-//				var curIndex=this.editInfor.index
-//				this.REINFOR[curIndex]=this.editInfor
-//				this.editOrder={ISEDIT:false,name:'',num:'',price:'',money:'',M_num:'',M_money:'',unit:'件',index:''}
+				this.editShow=false
 			},
 			mustFull(){
-				//mustFill()
 				var isOk=mustFill();
 				if(isOk.length==0){
 					console.log('hi')
@@ -220,6 +205,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!--<div class="form_title">订单详情</div>-->
     <!--客户订单-->
     <div>
 	  <div class="mongolia" v-show="topLayer" @click="closeAlert"></div><!--蒙层-->
@@ -12,15 +11,12 @@
           </label>
           <div class="form_row_right">
             <div class="mui-btn mui-btn-primary" @click="alert()">
-              <!--<span class="mui-icon mui-icon-plus"></span>-->
               	添加
             </div>
             <button type="button" class="mui-btn" @click="delOrder()">
-              <!--<span class="mui-icon mui-icon-minus"></span>-->
               	删除
             </button>
             <span class="mui-btn mui-btn-success" @click="editGoods()">
-              <!--<span class="mui-icon mui-icon-more"></span>-->
             	  编辑
             </span>
           </div>
@@ -71,7 +67,6 @@
         </div>
         <!--订单合计结束-->
         <!--<!--添加弹窗-->
-        <!--:class="alertShow?'alertOut':'alertIn'"-->
         <div class="alert_div" v-show="alertShow">
           <div>
             <div class="form_title">产品添加</div>
@@ -94,7 +89,6 @@
                         <option>{{item.text}}</option>
                       </select>
                     </div>
-                    <!--<input type="text" class="form_row_right" placeholder="请输入（联想代码）" v-model="editOrder.name"/>-->
                   </div>
                   <div class="form_row">
                     <label class="form_row_left huise" for>
@@ -126,21 +120,6 @@
                       	单价
                       <span class="span_red">*</span>
                     </label>
-                    <!--<div class="form_row_right" >-->
-                    <!--<van-button @touchstart.stop="showNumber = true">
-						 弹出默认键盘
-                    </van-button>-->
-                    <!--<input type="number" @focus="showNumber=true" readonly="readonly" id="" v-model="editOrder.price" />
-						<van-number-keyboard
-						:show="showNumber"
-						theme="custom"
-						extra-key="."
-						close-button-text="完成"
-						@blur="showNumber = false"
-						@input="onInput"
-						@delete="onDelete"
-                    />-->
-                    <!--</div>-->
                     <input
                       type="number"
                       pattern="/[^\d^\.]+/g"
@@ -155,7 +134,6 @@
                       <span class="span_red">*</span>
                     </label>
                     <div class="form_row_right">{{editOrder.money=editOrder.num*editOrder.price}}</div>
-                    <!--<input type="text" class="form_row_right" placeholder="请输入" v-model="money=num*price"/>-->
                   </div>
                   <div class="form_row">
                     <label class="form_row_left huise" for>
@@ -270,14 +248,6 @@
 				}else{
 					mui.confirm('你确定要删除订单','提示',['取消','确定 '],(e)=>{
 						if(e.index==1){
-							/*this.list.forEach((el,index)=>{
-								if(this.checkData.indexOf(el.name)!=-1){
-									this.checkData=this.checkData.filter((item)=>{//去掉勾选
-										return item!=el.name
-									})
-									this.list.splice(index,1)
-								}
-							})*/
 							that.list=that.list.filter((el,index)=>{
 								return that.checkData.includes(el.name)==false
 							})
@@ -364,7 +334,3 @@
 		}
 	}
 </script>
-
-<style>
-	
-</style>

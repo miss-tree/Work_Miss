@@ -22,15 +22,11 @@
 			<div>
 				<list :ORDERLIST="ORDER" @getCheck="getCheckInfor"></list>
 			</div>
-			<!--订单列表结束-->
-			<!--<pages></pages>-->
-			<!--分页结束-->
 		</div>
 	</div>
 </template>
 
 <script>
-	import pages from "../assembly/pagination.vue"; /*分页*/
 	import search from "./views/store-list-search.vue"; /*搜索*/
 	import inputcode from "./views/inputcode.vue" /*联想搜索框*/
 	import list from "./views/store-visit-list.vue" /*列表*/
@@ -105,12 +101,7 @@
 				]
 			};
 		},
-		components: {
-			pages,
-			search,
-			inputcode,
-			list
-		},
+		components: {search,inputcode,list},
 		created() {
 			const getStorage = localStorage.getItem("IS_FIRST_LOGIN")
 			if(getStorage) {
@@ -149,7 +140,3 @@
 		}
 	};
 </script>
-
-<style>
-
-</style>

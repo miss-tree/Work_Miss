@@ -13,7 +13,6 @@
 			<div class="tableSearch">
 				<div style="width: 70%;">
 					<input type="text" name="" id="search" value="" placeholder="请输入关键字(代码联想)"/>
-					<!--<i class="iconfont icon-sousuo3"></i>-->
 				</div>
 				<div class="searchBtn" @click="alert()">
 						搜索
@@ -69,7 +68,6 @@
 </template>
 
 <script>
-	import pages from "../assembly/pagination.vue"	/*分页*/
 	import list from "./views/order-List.vue"	/*列表*/
 import search from "./views/order-list-search.vue"/*搜索弹框*/
 	import {selectTime,getTime,getDate,DateAdd,mustFill,selecTion} from '../../../static/utils/public.js'
@@ -102,9 +100,7 @@ import search from "./views/order-list-search.vue"/*搜索弹框*/
 			        { text: "安徽维泰利" },]
 			}
 		},
-		components:{
-			pages,list,search
-		},
+		components:{list,search },
 		computed:{
 			 spanColor(){
 			 	this.ORDERLIST.forEach((el,index)=>{
@@ -143,6 +139,3 @@ import search from "./views/order-list-search.vue"/*搜索弹框*/
 		}
 	}
 </script>
-
-<style>
-</style>

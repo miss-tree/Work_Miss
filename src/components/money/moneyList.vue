@@ -19,7 +19,7 @@
 					</div>
 					<div class="searchBtn searchLocation">
 						搜索
-					</div>	 
+					</div>
 				</div>
 			</div>
 			<div style="height: 40px;"></div>
@@ -45,19 +45,15 @@
 						<span class="margin-lr">{{item.addMoney}}</span>
 					</div>
 					<div class="" style="padding: 0 15px;">
-						<!--<label class="text-justify"><span class="span-justify"></span></label>-->
 						<span class="">……</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--功能组件-->
-		<!--<gongneng></gongneng>-->
 	</div>
 </template>
 
 <script>
-//	import gongneng from "../gongneng.vue"
 	import {selectTime} from "../../../static/utils/public.js"
 	export default {
 		data() {
@@ -70,13 +66,9 @@
 					{title:"2019年4月份工资",base:6000,addMoney:700,id:875565615}]
 			}
 		},
-//		components: {
-//			gongneng
-//		},
 		mounted(){
 			selectTime()
 		},
-		methods: {}
 	}
 </script>
 
@@ -93,8 +85,6 @@
 		font-size: 15px;
 		width: 80px;
 		text-align: center;
-		/*border: 0 !important;*/
 		line-height: 30px !important;
-		/*margin-top: 5px;*/
 	}
 </style>

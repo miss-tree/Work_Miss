@@ -341,10 +341,7 @@ export default {
     }
   },
   mounted() {
-    /*var that=this*/
     selectTime();
-    //progress();
-    //refresh();
     PopPicker("showCityPicker3");
     PopPicker("cityPicker3");
     this.getTime();
@@ -373,7 +370,6 @@ export default {
         otherPay: "",
         tatol: 0
       };
-      //Travel[0].
       this.Travel.push(obj);
     },
     removeTravel(index) {
@@ -385,6 +381,3 @@ export default {
   }
 };
 </script>
-
-<style>
-</style>

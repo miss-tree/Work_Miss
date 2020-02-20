@@ -187,7 +187,6 @@ export default {
 <style>
 #rightBtn .mui-btn{
 	line-height: 32px;
-	/*vertical-align: baseline;*/
 	color: #fff;
     border: 1px solid #6596cc;
     background-color: #6596cc;

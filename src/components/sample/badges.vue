@@ -37,7 +37,6 @@
 	h5 {
 		margin: 10px;
 	}
-	
 	.mui-badge {
 		margin: 10px;
 	}

@@ -36,23 +36,6 @@
 				</div>
 			</div>
 
-			<!--<div class="mui-card">
-				<div class="mui-card-header mui-card-media">
-					<div class="mui-card-media-object mui-pull-left">
-						<img src="../images/logo.png" width="34px" height="34px" />
-					</div>
-					<div class="mui-card-media-body">
-						小M
-						<p class="mui-ellipsis">发表于 6小时前</p>
-					</div>
-				</div>
-				<div class="mui-card-content mui-card-media" style="height:40vw;background-image:url(../images/yuantiao.jpg)"></div>
-				<div class="mui-card-footer">
-					<a class="mui-card-link">Like</a>
-					<a class="mui-card-link">Comment</a>
-					<a class="mui-card-link">Read more</a>
-				</div>
-			</div>-->
 
 			<div class="mui-card">
 				<div class="mui-card-header mui-card-media">
@@ -61,9 +44,6 @@
 						小M
 						<p>发表于 2016-06-30 15:30</p>
 					</div>
-					<!--<img class="mui-pull-left" src="../images/logo.png" width="34px" height="34px" />
-					<h2>小M</h2>
-					<p>发表于 2016-06-30 15:30</p>-->
 				</div>
 				<div class="mui-card-content">
 					<img :src="src" alt="" width="100%" />

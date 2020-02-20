@@ -125,12 +125,9 @@
 </template>
 
 <script>
-import "../../../static/utils/selectFilter.js"; /*自定义下拉框*/
-import "../../../static/css/selectFilter.css";
 import { mustFill } from "../../../static/utils/public.js";
 import returndetail from "./views/order-list-detail.vue"; /*退货订单详情*/
 import returnadd from "./views/order-return-add.vue"; /*添加退货*/
-import timeLine from "../assembly/timeLine.vue"; /*流程进度*/
 export default {
   data() {
     return {
@@ -162,8 +159,7 @@ export default {
     };
   },
   components: {
-    returnadd,timeLine,
-    returndetail
+    returnadd, returndetail
   },
   watch:{
   	RETURNTYPE(newVal,oldVal){
@@ -187,7 +183,3 @@ export default {
   }
 };
 </script>
-
-<style>
-
-</style>

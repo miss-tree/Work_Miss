@@ -35,10 +35,8 @@
 </template>
 
 <script>
-	import getTop from "../../assembly/getTop.vue"; /*回到顶部*/
 	import storeMsg from "./infoViews/store-detail.vue"
 	import storeMap2 from "./infoViews/store-detail-map.vue"
-	import timeLine from "../../assembly/timeLine.vue"; /*流程进度*/
 	export default{
 		data(){
 			return{
@@ -53,11 +51,6 @@
 					{progress:'提交申请',opinion:'',bz:'',time:'2019-08-01 21:42'}],
 			}
 		},
-		components:{getTop,storeMsg,storeMap2,timeLine},
-		methods:{
-		}
+		components:{storeMsg,storeMap2},
 	}
 </script>
-
-<style>
-</style>

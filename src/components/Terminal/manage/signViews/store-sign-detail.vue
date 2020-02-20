@@ -9,20 +9,6 @@
 		    			</label>
 					<div class="form_row_right">{{INFOR.name}}</div>
 				</div>
-				<!--<div class="form_row">
-					<label class="form_row_left huise" id="storeAttr">
-		    				门店属性
-		    				<span class="span_red"></span>
-		    			</label>
-					<div class="form_row_right">{{INFOR.storeAttr}}</div>
-				</div>-->
-				<!--<div class="form_row">
-					<label class="form_row_left huise" id="storeAttr">
-		    				门店类型
-		    				<span class="span_red"></span>
-		    			</label>
-					<div class="form_row_right">{{INFOR.type}}</div>
-				</div>-->
 				<div class="form_row">
 					<label class="form_row_left huise">
 		    				医保情况
@@ -30,13 +16,6 @@
 		    			</label>
 					<div class="form_row_right">{{INFOR.isYB}}</div>
 				</div>
-				<!--<div class="form_row">
-					<label class="form_row_left huise" id="money">
-		    				月营业额
-		    				<span class="span_red"></span>
-		    			</label>
-					<div class="form_row_right">{{INFOR.money}}</div>
-				</div>-->
 				<div class="form_row">
 					<label class="form_row_left huise" for="" id="level">
 		    				门店级别
@@ -86,13 +65,6 @@
 
 <script>
 	export default {
-		data() {
-			return {}
-		},
 		props: ["INFOR"],
 	}
 </script>
-
-<style>
-
-</style>

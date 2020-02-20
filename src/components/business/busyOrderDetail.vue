@@ -35,7 +35,6 @@
 </template>
 
 <script>
-	import getTop from "../assembly/getTop.vue"; /*回到顶部*/
 	import storeMsg from "./orderViews/order-detail.vue"
 	import proName from "./orderViews/order-pro-detail.vue"
 	export default{
@@ -56,7 +55,7 @@
 				],
 			}
 		},
-		components:{getTop,storeMsg,proName},
+		components:{storeMsg,proName},
 		computed:{
 			changeVal(){
 				console.log('hi')
@@ -66,6 +65,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

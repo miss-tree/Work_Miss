@@ -25,24 +25,13 @@
 	</div>
 </div>
 </template>
-<!--/* 时间组件，
-	 * 基础的参数{progress、time}
-     * 显示进程和时间
-     */*/-->
 <script>
 	export default {
-		data() {
-			return {
-			}
-		},
 		props:["examInfor"],
-		methods: {
-			
-		}
 	}
 </script>
 
-<style>
+<style scoped>
 .time_line_div{
 		padding: 15px;
 		background-color: #fff;

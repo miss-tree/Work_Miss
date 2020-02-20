@@ -11,7 +11,6 @@
 	    	<!--回到顶部-->
 	    	<get-top></get-top>
 	    	<div class="formTable">
-	    		<!--<div class="form_title">
 	    			客户信息
 	    		</div>-->
 	    		<div class="form_div">
@@ -56,15 +55,6 @@
 		    				<span class="span_red"></span>
 		    			</label>
 		    			<div class="form_row_right">{{LEAVETYPE}}</div>
-		    			<!--<div class="filter-box form_row_right" id="orderClient">
-							<div class="filter-text" >
-								<input class="filter-title" type="text" data="required" name="type" readonly placeholder="请选择" />
-								<i class="icon icon-filter-arrow"></i>
-							</div>
-								<select name="filter" v-for="(item,index) in leaveType">
-									<option>{{item.text}}</option>
-								</select>
-						</div>-->
 		    		</div>
 			        <div class="form_row">
 		              <label class="form_row_left huise" id="start">
@@ -108,8 +98,6 @@
 					</div>
 					<div class="padding-lr padding_bb">
 						<div class="detail_bz">{{BZ}}</div>
-						<!--<textarea class="textarea" readonly="readonly" 
-					rows="" cols="38" placeholder="请输入订单备注" v-model="BZ"></textarea>-->
 					</div>
 					<div class="bottomOver"></div>
 				</div>
@@ -132,10 +120,6 @@
 </template>
 
 <script>
-	import getTop from "../assembly/getTop.vue"; /*回到顶部*/
-	import lookimg from "../assembly/lookimg.vue"/*图片查看*/
-	import timeLine from "../assembly/timeLine.vue"; /*流程进度*/
-//	import {selectTime} from '../../../static/utils/public.js'
 	export default{
 		data(){
 			return{
@@ -167,7 +151,6 @@
 				params:'',	
 			}
 		},
-		components:{lookimg,getTop,timeLine},
 		created(){//获取传入的参数
           //如果使用query方式传入的参数使用this.$route.query 接收     $route只读
           //如果使用params方式传入的参数使用this.$router.params接收 		$router可操作
@@ -175,14 +158,6 @@
           // var param = this.$route.params;
           this.params = param
     	},
-		mounted(){
-//			var that=this
-//			$('#orderClient').selectFilter({
-//				callBack: function(val) {
-//					that.LEAVETYPE = val
-//				}
-//			});
-		},
 		methods:{
 			getPart1(value, index){//选择部门
 		    	this.PARTONE=value,
@@ -206,6 +181,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

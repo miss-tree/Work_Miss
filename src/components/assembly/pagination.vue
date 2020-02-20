@@ -102,7 +102,7 @@
 	}
 </script>
 
-<style>
+<style  >
 	/*分页*/
 .page-bar {
 	    position: fixed;

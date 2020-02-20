@@ -72,7 +72,6 @@
 </script>
 
 <style>
-
 	.alertInMiddle{
 		transform: translateY(150%);
 	}

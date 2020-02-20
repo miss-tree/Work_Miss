@@ -32,7 +32,6 @@
 		props: ["MOVELIST"],
 		watch:{
 			checkData(newVal,oldVal){
-				//console.log(newVal)
 				if(this.checkData.length!=0){
 					this.checkInfor=[]
 					this.MOVELIST.forEach((el,index)=>{
@@ -55,6 +54,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

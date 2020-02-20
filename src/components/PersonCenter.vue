@@ -1,32 +1,5 @@
 <template>
 	<div>
-		<!--<div class="tou-bag">
-			<div class="per-msg">
-				<div class="msg">
-					<p>员工：<span>张三</span></p>
-					<p>部门：<span>电商部</span></p>
-				</div>
-			</div>
-		</div>
-		<div>
-			<ul class="mui-table-view">
-					<li class="mui-table-view-cell">
-							<router-link class="mui-navigate-right" to='/qiandao'>
-								<i class="iconfont icon-qiandao"></i> 考勤签到
-							</router-link>
-					</li>
-					<li class="mui-table-view-cell">
-						<router-link class="mui-navigate-right" to="/kaoqinList">
-							<i class="iconfont icon-yidongbangong"></i>外勤记录
-						</router-link>
-					</li>
-					<li class="mui-table-view-cell">
-						<router-link  class="mui-navigate-right" to="/apply">
-							<i class="iconfont icon-drxx81"></i>请假申请
-						</router-link>
-					</li>
-				</ul>
-		</div>-->
 		<!--选项卡-->
 		<div>
 			<nav class="mui-bar mui-bar-tab">
@@ -49,8 +22,6 @@
 			</nav>
 		</div>
 		<!--内容部分-->
-		<!--<div class="mui-page-content">-->
-				<!--<div class="mui-scroll-wrapper">-->
 					<div class="mui-scroll">
 						<ul class="mui-table-view mui-table-view-chevron back_title">
 							<li class="mui-table-view-cell mui-media" style="padding: 15px 15px;">
@@ -65,12 +36,6 @@
 								</a>
 							</li>
 						</ul>
-						<!--<div class="margin_top"></div>
-						<ul class="mui-table-view mui-table-view-chevron">
-							<li class="mui-table-view-cell">
-								<a href="#account" class="mui-navigate-right">账号与安全</a>
-							</li>
-						</ul>-->
 						<div class="margin_top"></div>
 						<ul class="mui-table-view mui-table-view-chevron">
 							<li class="mui-table-view-cell">
@@ -81,7 +46,7 @@
 							</li>
 							<li class="mui-table-view-cell">
 								<router-link class="mui-navigate-right huise" to="/login">
-									<!--<a href="#general">-->通用<!--</a>-->
+                  通用
 								</router-link>
 							</li>
 						</ul>
@@ -92,13 +57,8 @@
 							</li>
 						</ul>
 					</div>
-				<!--</div>-->
-			<!--</div>-->
 	</div>
 </template>
-
-<script>
-</script>
 
 <style>
 	.round_div {
@@ -109,11 +69,11 @@
 		width: 42px;
 		overflow: hidden;
 	}
-	
+
 	.round_div .mui-pull-left::after {
 		clear: both;
 	}
-	
+
 	.mui-bar .mui-icon {
 		padding: 0;
 	}

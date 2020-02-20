@@ -88,20 +88,8 @@
 <script>
 		import gongneng from "../gongneng.vue"
 	export default{
-		data(){
-			return{
-			}
-		},
 		components:{
 			gongneng
 		},
-		methods:{
-//			jump(){
-//				this.$router.go(-1)
-//			}
-		}
 	}
 </script>
-
-<style>
-</style>

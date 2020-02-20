@@ -8,14 +8,6 @@
 	    <!--头部结束-->
 	    <div class="mui-content">
 	    	<div class="screen">
-		    	<!--<div class="screen_tab" style="width: 35%;">
-		    		<div @click="changeOne" class="nowrap">
-		    			{{startVal}}
-		    			<span class="mui-icon span_13px" 
-		    				:class="select1?'mui-icon-arrowdown':'mui-icon-arrowup'" 
-		    				></span>
-		    		</div>
-		    	</div>-->
 		    	<div class="screen_tab" style="width: 75%;">
 		    		<div @click="changeTwo" class="nowrap"> 
 		    			{{modelVal}}

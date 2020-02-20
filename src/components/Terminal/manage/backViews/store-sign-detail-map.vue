@@ -1,7 +1,6 @@
 <template>
 	<div>
 		<baidu-map :center="IPINFOR.mapInfo.view" :zoom="17">
-			<!-- @ready="handlerBaiduMapReady" @click="setNewIcon"-->
 			<bm-view class="map"></bm-view>
 			<!--比例尺-->
 			<bm-scale anchor="BMAP_ANCHOR_TOP_LEFT"></bm-scale>
@@ -101,7 +100,6 @@
 						<div class="mui-btn mui-btn-primary">无须修正</div>
 					</div>
 				</div>
-				<!--<div class="bottomOver"></div>-->
 			</div>
 			<div style="height: 40px;"></div>
 		</div>
@@ -110,16 +108,8 @@
 
 <script>
 	export default {
-		data() {
-			return {
-			}
-		},
 		props:["IPINFOR"],
 		methods: {
 		}
 	}
 </script>
-
-<style>
-
-</style>

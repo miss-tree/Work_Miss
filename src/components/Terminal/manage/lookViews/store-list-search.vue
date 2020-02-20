@@ -55,33 +55,6 @@
                 </div>
               </div>
             </div>
-            <!--<div class="form_title">申请状态</div>
-            <div class="form_div padding_tb_5px">
-              <div class="alertRow">
-                <div class="form_row_right flex justify_content">
-                <label>
-                    <input type="checkbox" name="CHECKSTATE" value="草稿" v-model="CHECKSTATE">
-                    <div class="row_button">草稿</div>
-                  </label>
-                  <label>
-                    <input type="checkbox" name="CHECKSTATE" value="待审" v-model="CHECKSTATE">
-                    <div class="row_button">待审</div>
-                  </label>
-                  <label>
-                    <input type="checkbox" name="CHECKSTATE" value="通过" v-model="CHECKSTATE">
-                    <div class="row_button">通过</div>
-                  </label>
-                </div>
-              </div>
-              <div class="alertRow" style="margin-top: 8px;">
-                <div class="form_row_right flex justify_content">
-                  <label>
-                    <input type="checkbox" name="CHECKSTATE" value="驳回" v-model="CHECKSTATE">
-                    <div class="row_button">驳回</div>
-                  </label>
-                </div>
-              </div>	
-            </div>-->
             <div class="form_title">其他</div>
             <div class="form_div padding_tb_5px">
               <div class="form_row" style="border: 0;">
@@ -98,20 +71,6 @@
                   id="part"
                 >
               </div>
-              <!--<div class="alertRow">
-                <label class="form_row_left huise" id="COMPANY">
-                  	门店属性
-                  <span class="span_red"></span>
-                </label>
-                <input
-                  type="text"
-                  class="form_row_right"
-                  v-model="comPany"
-                  name="company"
-                  placeholder="请选择"
-                  id="compony"
-                >
-              </div>-->
             </div>
           </div>
         </div>
@@ -153,7 +112,6 @@ import {selectTime,getTime,getDate,DateAdd,selecTion} from "../../../../../stati
 		mounted(){
 			selectTime();
     		selecTion("part", this.sectionArr);
-//  		selecTion("compony", this.comArr);
 		},
 		methods:{
 			closeAlert(){//点击关闭
@@ -196,6 +154,3 @@ import {selectTime,getTime,getDate,DateAdd,selecTion} from "../../../../../stati
 		}
 	}
 </script>
-
-<style>
-</style>

@@ -112,7 +112,6 @@ import {selectTime,getTime,getDate,DateAdd,selecTion} from "../../../../../stati
 			selectTime();
 			this.checkWhere= OTCData.map(row=>({text:row.text}))
     		selecTion("part", this.checkWhere);
-//  		selecTion("compony", this.comArr);
 		},
 		methods:{
 			closeAlert(){//点击关闭
@@ -158,6 +157,3 @@ import {selectTime,getTime,getDate,DateAdd,selecTion} from "../../../../../stati
 		}
 	}
 </script>
-
-<style>
-</style>

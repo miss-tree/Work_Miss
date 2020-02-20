@@ -7,10 +7,6 @@
 					<div class="huise dateRow_left">{{item.part1}}</div>
 					<div class="dateRow_right  " :class="{span_green:item.state=='升职申请',span_red:item.state=='离职申请'}">{{item.state}}</div>
 				</div>
-				<!--<div class="dateRowRight">
-					<div class="huise dateRow_left">{{item.orderNum}}</div>
-					<div class="dateRow_right ">{{item.money}}</div>
-				</div>-->
 				<div class="dateRowRight">
 					<div class="huise dateRow_left">{{item.name}}</div>
 					<div class="dateRow_right huise ">{{item.dateTime}}</div>
@@ -55,6 +51,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

@@ -11,7 +11,6 @@
 					<div>密码：</div>
 					<input type="password" v-model="psw" placeholder="请输入密码"/>
 				</div>
-				<!--<div>登陆</div>-->
 				<div style="padding-top: 20px;text-align: center;">
 					<input type="submit" value="登陆"/>
 				</div>
@@ -28,10 +27,6 @@
       	psw:'',
       }
     },
-    created () {
-    },
-    methods: {
-    }
   }
 </script>
 

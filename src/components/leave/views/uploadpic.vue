@@ -22,18 +22,8 @@ export default {
   methods: {
   	afterRead(file) {
   		console.log(file);
-      // 此时可以自行将文件上传至服务器
-//    let content = file.file;
-//      let data = new FormData();
-//      data.append('img',content);
-//      this.axios.post('图片上传地址',data)
-//      .then((res) => {
-//          let datas = res.data.datas.path;
-//          this.msg.hallImg.push(`api地址${datas}`);
-//      })
     },
     deletIMG() {//vant删除
-//    console.log("hi");
     },
   }
 };

@@ -129,7 +129,6 @@
 			yesterday(){//点击获取昨天时间
 				var now = new Date();
 				var newDate=now.setDate(now.getDate() + (-1));
-//				var newDate = DateAdd("d", 1, now);
 				var 	d=new Date(newDate)
 				d=`${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`
 				this.STARTDATE=d	

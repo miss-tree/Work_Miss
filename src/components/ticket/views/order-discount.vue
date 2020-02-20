@@ -2,27 +2,16 @@
   <div>
     <div>
       <div class="form_div">
-        <!--<div class="form_row">
-          <label class="form_row_left huise" for>
-            	折扣列表
-            <span class="span_red"></span>
-          </label>
-          <div class="form_row_right">
-          </div>
-        </div>-->
         <!--产品订单列表-->
         <table border="0" cellspacing cellpadding class="dataTable">
           <tr>
             <th class="col_10">
               <label class="bui-checkbox-label bui-checkbox-anim">
-                <!--<input type="checkbox" @click="checkAll" v-model="allCheck">
-                <i class="bui-checkbox"></i>-->
               </label>
             </th>
             <th class="col_20">项目编号</th>
             <th class="col_40">项目名称</th>
             <th class="col_15">折扣总金额</th>
-            <!--<th class="col_15">金额</th>-->
           </tr>
           <tr v-for="(item,index) in DISCOUNTORDER">
             <td class="col_10">
@@ -40,9 +29,6 @@
             <td class="col_15 text_algin">
               <span>{{item.money}}</span>
             </td>
-            <!--<td class="col_15 text_algin">
-              <span>{{item.money}}</span>
-            </td>-->
           </tr>
         </table>
         <!--产品订单列表结束-->
@@ -108,28 +94,7 @@ export default {
   },
   methods: {
   	getInfor(){
-//		if(this.checkData==[]){
-//			this.DISCOUNTINFOR={
-//	      	tatol:0,
-//	      	arr:[]
-//	      };
-//		}else{
-//				this.DISCOUNTORDER.forEach((el,index)=>{
-//					if(this.checkData.indexOf(el.name)>-1){
-//						//this.DISCOUNTINFOR.tatol=DISCOUNTINFOR.tatol+this.DISCOUNTORDER[index].money
-//						this.DISCOUNTINFOR.arr.push(this.DISCOUNTORDER[index])
-//					}
-//				})
-//			console.log(this.checkData)
-//			 this.DISCOUNTINFOR.tatol=this.discounTotal
-//		}
-//			this.$emit('getDiscount',DISCOUNTINFOR)
-//			
-//		console.log(this.checkData)
   	}
   }
 };
 </script>
-
-<style>
-</style>

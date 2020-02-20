@@ -1,10 +1,6 @@
 <template>
   <div>
     <div class="mongolia" v-show="topLayer" @click="closeAlert"></div>
-    <!--蒙层-->
-    <!--<div class="form_title">
-    	订单详情
-    </div>-->
     <!--客户订单-->
     <div>
       <div class="form_div">
@@ -149,6 +145,3 @@ export default {
   }
 };
 </script>
-
-<style>
-</style>

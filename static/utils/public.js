@@ -1,5 +1,3 @@
-import Vue from 'vue'
-import router from '@/router'
 import {cityData3} from './city.data-3.js'
 
 
@@ -114,18 +112,9 @@ export function selectTime() {
 				var picker = new $.DtPicker(options);
 				picker.show(function(rs) {
 					/*
-					 * rs.value 拼合后的 value
-					 * rs.text 拼合后的 text
-					 * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
-					 * rs.m 月，用法同年
-					 * rs.d 日，用法同年
-					 * rs.h 时，用法同年
 					 * rs.i 分（minutes 的第二个字母），用法同年
 					 */
 					document.getElementById(id).value = rs.text;
-//					timeVal=rs.text;
-					//console.log(timeVal)
-//					btn.dispatchEvent(new Event('input'))
 					document.getElementById(id).dispatchEvent(new Event('input'))
 					/* 
 					 * 返回 false 可以阻止选择框的关闭
@@ -223,12 +212,9 @@ export function mustFill() {
 		//mui.toast('请输入' + reqText)
 		/*
 		 * 或者另外的弹窗方式
-		 * 
 		 */
 		mui.alert('请输入' + reqText)
-		//return false;
 	}
-	//console.log(isOk)
 	return a
 }
 

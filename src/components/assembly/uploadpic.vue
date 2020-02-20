@@ -1,30 +1,13 @@
 <template>
   <div>
     <!--头部-->
-    <!--<header class="mui-bar mui-bar-nav back_title">
-      <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-      <h1 class="mui-title">图片上传</h1>
-    </header>-->
-    <!--<div class="mui-content">-->
-      <!--<div class="margin-t padding-lr">-->
-        <!--webuploader-->
-        <!--<span>附件</span>-->
-        <!--<div class="img-div">
-					<div class="z_photo" id="uploader-demo">
-						<div class="z_file" id="filePicker"></div>
-						<div id="fileList" class="uploader-list"></div>
-					</div>
-        </div>-->
-      <!--</div>-->
       <div class="padding-lr">
-        <!--vant-->
         <div class="vant_upload_div">
           <div class="vant_upload_img_div">
             <van-uploader v-model="fileList" :after-read="afterRead" multiple :delete="deletIMG()"/>
           </div>
         </div>
       </div>
-    <!--</div>-->
   </div>
 </template>
 
@@ -64,18 +47,8 @@ export default {
   methods: {
   	afterRead(file) {
   		console.log(file);
-      // 此时可以自行将文件上传至服务器
-//    let content = file.file;
-//      let data = new FormData();
-//      data.append('img',content);
-//      this.axios.post('图片上传地址',data)
-//      .then((res) => {
-//          let datas = res.data.datas.path;
-//          this.msg.hallImg.push(`api地址${datas}`);
-//      })
     },
     deletIMG() {//vant删除
-//    console.log("hi");
     },
   }
 };

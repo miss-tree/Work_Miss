@@ -4,10 +4,6 @@
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 			<h1 class="mui-title">dtpicker（日期时间选择器））</h1>
 		</header>
-		<!--<header class="mui-bar mui-bar-nav">-->
-			<!--<router-link class="mui-icon mui-icon-left-nav mui-pull-left"></router-link>-->
-			<!--<h1 class="mui-title"></h1>-->
-		<!--</header>-->
 		<div class="mui-content">
 			<div class="mui-content-padded">
 				<h5 class="mui-content-padded">常规示例</h5>
@@ -30,11 +26,6 @@
 </template>
 
 <script>
-//	import mui from 'mui';  
-//	require('../../static/utils/mui.picker.js');  
-//	require('../../static/utils/mui.poppicker.js'); 
-	
-//	import poppicker from '../../static/utils/mui.poppicker.js'
 	export default {
 	data() {
 		return {
@@ -95,9 +86,5 @@
 				});
 			})(mui);
 	},
-//	methods: {}
 		}
 </script>
-
-<style>
-</style>

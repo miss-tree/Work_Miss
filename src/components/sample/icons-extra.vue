@@ -102,9 +102,6 @@
 </script>
 <style scoped>
 	.flex-container {
-		/*display: -webkit-box;
-		display: -webkit-flex;
-		display: flex;*/
 		-webkit-flex-flow: row wrap;
 		justify-content: space-between;
 		text-align: center;

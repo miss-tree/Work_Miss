@@ -27,16 +27,12 @@
 			<!--订单列表-->
 			<list :MOVELIST="MOVELIST"></list>
 			<!--订单列表结束-->
-	   		<!--分页-->
-	   		<!--<pages></pages>-->
-	   		<!--分页结束-->
 	    </div>
 	</div>
 </template>
 
 <script>
 	import {selectTime,getTime,getDate} from '../../../static/utils/public.js'
-	import pages from "../assembly/pagination.vue"/*分页*/
 	import list from "./views/my-leave-List.vue"/*列表*/
 	import search from "./views/leave-list-search.vue";/*搜索*/
 	export default{
@@ -51,11 +47,7 @@
 				{name:'鲁迅',part1:'制药厂',startDate:'2019-09-02',state:'未通过',dateTime:'2018-11-01',money:9000,id:35618546},]
 			}
 		},
-		components:{
-			pages,
-			list,
-			search
-		},
+		components:{ list,search	},
 		computed:{
 		},
 		mounted(){
@@ -74,6 +66,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

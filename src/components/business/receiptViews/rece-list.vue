@@ -4,9 +4,7 @@
 		<div>
 			<div id="dateTable">
 				<div class="Row">
-					<!--<div class="col_20">省区</div>-->
 					<div class="col_60">来款单位</div>
-					<!--<div class="col_10">数量</div>-->
 					<div class="col_20">收款金额</div>
 					<div class="col_20">收款日期</div>
 				</div>
@@ -15,9 +13,6 @@
 						<div class="col_60" style="text-align: left;">
 							<span class="span_13px nowrap">{{item.title}}</span>
 						</div>
-						<!--<div class="col_10" style="text-align: center;">
-							<span class="span_13px ">{{item.num}}</span>
-						</div>-->
 						<div class="col_20" style="text-align: center;" >
 							<span class="span_13px ">{{item.money}}</span>
 						</div>
@@ -34,9 +29,6 @@
 
 <script>
 	export default {
-		data() {
-			return {}
-		},
 		props: ["ORDERLIST"],
 		methods: {
 			routerTo(item,index){//页面跳转
@@ -45,6 +37,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

@@ -3,7 +3,6 @@
 		<div>
 			<div class="code_input" id="list">
 				<div>
-						<!--@input="setInput($event)"-->
 					<input type="text" id="search" 
 						@blur="changeShow" 
 						@focus="changeShow" 
@@ -12,7 +11,6 @@
 						@keydown.up.prevent="changeUp()" 
 						placeholder="请先选择客户名称" />
 				</div>
-				<!--<input type="text" class="" @blur="changeShow" @focus="changeShow" v-model="tl" @keyup="get($event)" placeholder="请输入北、广、上" @keydown.down="changeDown()" @keydown.up.prevent="changeUp()">-->
 				<ul class="code_ul" v-show="willShow" style="position: fixed;top: 85px;width: 100%;">
 					<li v-for="(value,index) in myData" @click="getCheck(index)" :class="{gray:index==now}">
 						{{value}}</li>

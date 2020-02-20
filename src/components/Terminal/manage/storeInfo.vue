@@ -19,9 +19,6 @@
 			</div>
 			<div style="height: 51px;"></div>
 			<!--订单列表-->
-			<!--<div class="messageDiv" v-show="clientName==''">
-				<div class="huise showMessage">请先选择客户名称搜索！</div>
-			</div>-->
 			<div>
 				<list :ORDERLIST="ORDER" @getCheck="getCheckInfor"></list>
 			</div>
@@ -31,11 +28,9 @@
 </template>
 
 <script>
-	import pages from "../../assembly/pagination.vue"; /*分页*/
 	import search from "./infoViews/store-list-search.vue"; /*搜索*/
 	import inputcode from "./infoViews/inputcode.vue" /*联想搜索框*/
 	import list from "./infoViews/store-list.vue" /*列表*/
-	//import {getTime,getDate} from "../../../static/utils/public.js";
 	export default {
 		data() {
 			return {
@@ -108,7 +103,6 @@
 			};
 		},
 		components: {
-			pages,
 			search,
 			inputcode,
 			list
@@ -119,9 +113,6 @@
 				this.isFirst = false
 				console.log("已经登陆过一次了")
 			}
-		},
-		mounted() {
-			//  this.$data.sureTime = getTime();
 		},
 		methods: {
 			setGuide() { //点击指引
@@ -152,7 +143,3 @@
 		}
 	};
 </script>
-
-<style>
-
-</style>

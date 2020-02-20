@@ -11,14 +11,6 @@
 	    	<get-top></get-top>
 			<!--选项卡-->
 	        <div>
-	            <!--<div class="tabHead" id="tabHead">
-		            <div @click="curIndex=0" :class="{active:curIndex==0}">
-		              <span>概要信息</span>
-		            </div>
-		            <div @click="curIndex=1" :class="{active:curIndex==1}">
-		              <span>产品信息</span>
-		            </div>
-	            </div> -->
 	            <!--基本信息-->
 	          <div v-show="curIndex==0">
 	          	<store-msg :INFOR="STOREINFOR"></store-msg>
@@ -35,7 +27,6 @@
 </template>
 
 <script>
-	import getTop from "../assembly/getTop.vue"; /*回到顶部*/
 	import storeMsg from "./returnViews/return-detail.vue"
 	import proName from "./billViews/bill-pro-detail.vue"
 	export default{
@@ -60,7 +51,7 @@
 				],
 			}
 		},
-		components:{getTop,storeMsg,proName},
+		components:{storeMsg,proName},
 		computed:{
 			changeVal(){
 				console.log('hi')
@@ -70,6 +61,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

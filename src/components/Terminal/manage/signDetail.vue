@@ -15,9 +15,6 @@
 		            <div @click="curIndex=0" :class="{active:curIndex==0}">
 		              <span>签到信息</span>
 		            </div>
-		            <!--<div @click="curIndex=2" :class="{active:curIndex==2}">
-		              <span>基本信息</span>
-		            </div>-->
 	            </div> 
 	            <!--地理位置-->
 	          <div v-show="curIndex==0">
@@ -29,21 +26,13 @@
 	          </div>
 	          <!--基本信息完成-->
 	        </div>
-	        <!--<div class="bottomOver"></div>-->
-	        	<!--<div class="form_title">
-		    		审核进度
-			    </div>
-		       	 <time-line :examInfor="EXAMINFOR"></time-line>
-		        </div>-->
         </div>  
 	</div>
 </template>
 
 <script>
-	import getTop from "../../assembly/getTop.vue"; /*回到顶部*/
 	import storeMsg from "./lookViews/store-sign-detail.vue"
 	import storeMap2 from "./lookViews/store-sign-detail-map.vue"
-	import timeLine from "../../assembly/timeLine.vue"; /*流程进度*/
 	export default{
 		data(){
 			return{
@@ -56,8 +45,6 @@
 						label:"药店地址：广东省广州市天河区棠下二社新围中心路17号锦达信商务大厦A座",
 						content:"签到位置：我是在这里的",
 						view: {
-		//					lng: 113.36811,
-		//					lat: 23.14003
 							lng: 113.3831,
 							lat: 23.13013
 						},/*在缩放比例为15的情况下：lng偏移-0.015，lat偏移+0.01*/
@@ -93,11 +80,6 @@
 				},
 			}
 		},
-		components:{getTop,storeMsg,storeMap2,timeLine},
-		methods:{
-		}
+		components:{storeMsg,storeMap2},
 	}
 </script>
-
-<style>
-</style>

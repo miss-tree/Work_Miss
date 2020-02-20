@@ -261,7 +261,6 @@ export default {
     timeLine
   },
   mounted() {
-    /*var that=this*/
     this.getTime();
   },
   methods: {

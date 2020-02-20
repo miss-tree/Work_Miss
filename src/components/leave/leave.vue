@@ -19,19 +19,8 @@
 							<i class="iconfont icon-liebiao1"></i>我的请假列表
 						</router-link>
 					</li>
-					<!--<li class="mui-table-view-cell">
-						<router-link class="mui-navigate-right" to='/signList'>
-							<i class="iconfont icon-qianshoudingdan"></i>订单签收(OTC)
-						</router-link>
-					</li>-->
 				</ul>
 			</div>
 		</div>
 	</div>
 </template>
-
-<script>
-</script>
-
-<style>
-</style>

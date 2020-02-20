@@ -16,20 +16,9 @@
       <!--搜索框-->
       <div class="tableSearch justify_content">
       	<inputcode @searchVal="getClientName" style="width: 85%;"></inputcode>
-        <!--<div style="width: 70%;">-->
-          <!--<input type="text" name id="search" value placeholder="请输入关键字(代码联想)">-->
-          <!--<i class="iconfont icon-sousuo3"></i>-->
-        <!--</div>-->
-        <!--<div class="searchBtn" @click="alertShow=!alertShow">搜索</div>-->
         <div  @click="alertShow=!alertShow">
 						<i class="iconfont icon-fenxiaosousuo lookAlert" ></i>
 				</div>
-        <!--<div style="margin-left: 15px;" @click="alertShow=!alertShow">
-          <i
-            class="iconfont icon-fenxiaosousuo"
-            style="color: #fff;display: inline-block; font-size: 30px;margin-top: 5px;"
-          ></i>
-        </div>-->
       </div>
       <div style="height: 51px;"></div>
       <!--弹出搜索框-->
@@ -45,26 +34,19 @@
 				<div class="mui-bar-tab mui-bar" style="height: 40px;padding: 0 15px;"><!-- v-show="checkData.length!=0"-->
 					<div class="bottomWidth">
 						<span class="span_15px">产品数量：{{checkData.length}}</span>
-						<!--<span class="span_15px" style="margin-left: 5px;">开票金额：{{APPLYMONEY}}</span>-->
 					</div>
 					<div class="mui-btn mui-btn-primary applyBtn" @click="routerTo">申请</div>
 				</div>
 			</div>
       <!--订单列表结束-->
-      <!--分页-->
-      <!--<pages></pages>-->
-      <!--分页结束-->
     </div>
   </div>
 </template>
 
 <script>
-import pages from "../assembly/pagination.vue";/*分页*/
 import search from "./views/order-list-search.vue";/*搜索*/
-	import inputcode from "../assembly/inputcode.vue"/*联想搜索框*/
 	import list from "./views/table-List.vue"/*列表*/
 import {selectTime,getTime, getDate,selecTion} from "../../../static/utils/public.js";
-//import list from "./order-List.vue";
 export default {
   data() {
     return {
@@ -95,8 +77,7 @@ export default {
     };
   },
   components: {
-    pages,search,inputcode,
-    list
+    search, list
   },
   computed: {
     spanColor() {

@@ -23,10 +23,6 @@
 
 <script>
 	export default {
-		data() {
-			return {
-			}
-		},
 		props: ["ORDERLIST"],
 		methods: {
 			routerTo(item,index){//页面跳转
@@ -39,6 +35,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

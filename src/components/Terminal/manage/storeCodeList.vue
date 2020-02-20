@@ -28,7 +28,6 @@
 </template>
 
 <script>
-	import pages from "../../assembly/pagination.vue"; /*分页*/
 	import search from "./codeViews/store-list-search.vue"; /*搜索*/
 	import inputcode from "./codeViews/inputcode.vue" /*联想搜索框*/
 	import list from "./codeViews/store-visit-list.vue" /*列表*/
@@ -116,7 +115,6 @@
 			};
 		},
 		components: {
-			pages,
 			search,
 			inputcode,
 			list
@@ -159,7 +157,3 @@
 		}
 	};
 </script>
-
-<style>
-
-</style>

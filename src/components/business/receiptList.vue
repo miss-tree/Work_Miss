@@ -29,11 +29,6 @@
 		    			<i class="iconfont icon-fenxiaosousuo" style="font-size: 20px;"></i>
 		    		</div>
 		    	</div>
-		    	<!--<div class="screen_tab">
-		    		<div @click="changeFour">
-		    			<i class="iconfont icon-sousuo3 span_13px"></i>
-		    		</div>
-		    	</div>-->
 	    	</div>
 	    	<!--选择弹出-->
 	    	<div>

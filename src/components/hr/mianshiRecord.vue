@@ -65,12 +65,7 @@
 </template>
 
 <script>
-	import uploadpic from "../assembly/uploadpic"
-	
 	export default{
-		components:{
-			uploadpic
-		},
 		methods:{
 			jump(){
 				this.$router.push({path:"/mianshiDetail",query:{id:id}})
@@ -78,6 +73,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

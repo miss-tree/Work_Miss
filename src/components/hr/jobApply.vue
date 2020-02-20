@@ -68,10 +68,6 @@
 <script>
 	import gongneng from "../gongneng.vue"
 	export default{
-		data(){
-			return{
-			}
-		},
 		components:{
 			gongneng
 		},
@@ -82,7 +78,3 @@
 		}
 	}
 </script>
-
-<style lang="scss">
-	
-</style>

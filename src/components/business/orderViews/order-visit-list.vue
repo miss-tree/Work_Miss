@@ -4,16 +4,12 @@
 		<div>
 			<div id="dateTable">
 				<div class="Row">
-					<!--<div class="col_20">省区</div>-->
 					<div class="col_50">客户名称</div>
 					<div class="col_30">发货日期</div>
 					<div class="col_20">查看</div>
 				</div>
 				<div id="">
 					<div class="row" v-for="(item,index) in ORDERLIST">
-						<!--<div class="col_20" >
-							<span class="span_13px nowrap">{{item.where}}</span>
-						</div>-->
 						<div class="col_50" style="text-align: left;">
 							<span class="span_13px nowrap">{{item.title}}</span>
 						</div>
@@ -33,9 +29,6 @@
 
 <script>
 	export default {
-		data() {
-			return {}
-		},
 		props: ["ORDERLIST"],
 		methods: {
 			routerTo(item,index){//页面跳转
@@ -44,6 +37,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

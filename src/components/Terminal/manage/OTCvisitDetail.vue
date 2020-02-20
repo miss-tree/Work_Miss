@@ -37,10 +37,7 @@
 </template>
 
 <script>
-	import getTop from "../../assembly/getTop.vue"; /*回到顶部*/
 	import storeMsg from "./visitViews/store-visit-detail.vue"
-	import lookimg from "../../assembly/lookimg.vue"
-	import timeLine from "../../assembly/timeLine.vue"; /*流程进度*/
 	export default{
 		data(){
 			return{
@@ -58,11 +55,6 @@
 				],
 			}
 		},
-		components:{getTop,storeMsg,lookimg,timeLine},
-		methods:{
-		}
+		components:{storeMsg},
 	}
 </script>
-
-<style>
-</style>

@@ -27,9 +27,7 @@
 		
 		<div class="margin-t padding-lr">
 				<span>备注</span>
-				<!--<div class="img-div">-->
 					<textarea name="" rows="2" cols="28" style="width: 100%;"></textarea>
-				<!--</div>-->
 		</div>
 		
 		<uploadpic></uploadpic>
@@ -40,25 +38,8 @@
 <script>
 	import uploadpic from "../assembly/uploadpic"
 	export default{
-		mounted(){
-			
-		},
 		components:{
 			uploadpic
 		},
-		data(){
-			return{
-				
-			}
-		},
-		methods:{
-//			jump(){
-//				this.$router.go(-1)
-//			},
-		}
 	}
 </script>
-
-<style lang="scss">
-	
-</style>

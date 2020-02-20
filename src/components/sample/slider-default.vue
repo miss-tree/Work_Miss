@@ -5,14 +5,6 @@
 			<h1 class="mui-title">图片轮播</h1>
 		</header>
 		<div class="mui-content">
-			<!--<ul class="mui-table-view mui-table-view-chevron">
-				<li id="switch" class="mui-table-view-cell">
-					定时轮播
-					<div class="mui-switch">
-						<div class="mui-switch-handle"></div>
-					</div>
-				</li>
-			</ul>-->
 		</div>
 		<div id="slider" class="mui-slider">
 			<div class="mui-slider-group mui-slider-loop">
@@ -82,18 +74,6 @@
 				this.$nextTick(function(){
 					
 				})
-				/*document.getElementById("switch").addEventListener('toggle', function(e) {
-					console.log(e)
-					if(e.detail.isActive) {
-						slider.slider({
-							interval: 5000
-						});
-					} else {
-						slider.slider({
-							interval: 0
-						});
-					}
-				});*/
 			}
 	}
 </script>

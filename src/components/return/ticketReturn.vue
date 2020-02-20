@@ -369,5 +369,4 @@ export default {
 .form_row_right label {
   padding: 0;
 }
-
 </style>

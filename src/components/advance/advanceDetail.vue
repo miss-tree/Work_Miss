@@ -23,7 +23,6 @@
 
 <script>
 	import detail from "./views/advance-detail.vue"
-	import timeLine from "../assembly/timeLine.vue"; /*流程进度*/
 	import { getDate, mustFill, selecTion } from '../../../static/utils/public.js'
 	export default {
 		data() {
@@ -43,9 +42,8 @@
 					{progress:'提交申请',opinion:'',bz:'',time:'2019-08-01 21:42'}],
 			}
 		},
-		components:{detail,timeLine},
+		components:{detail},
 		mounted() {
-//			that.ENDDATE = that.getEndTime()
 		},
 		methods: {
 			getPart1(value, index) { //选择部门

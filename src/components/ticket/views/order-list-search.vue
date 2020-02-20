@@ -118,25 +118,6 @@
                 >
               </div>
             </div>
-            <!--<div class="form_title">订单状态</div>
-            <div class="form_div padding_tb_5px">
-              <div class="alertRow">
-                <div class="form_row_right flex justify_content">
-                  <label>
-                    <input type="checkbox" name="CHECKSTATE" value="草稿" v-model="CHECKSTATE">
-                    <div class="row_button">草稿</div>
-                  </label>
-                  <label>
-                    <input type="checkbox" name="CHECKSTATE" value="通过" v-model="CHECKSTATE">
-                    <div class="row_button">通过</div>
-                  </label>
-                  <label>
-                    <input type="checkbox" name="CHECKSTATE" value="未通过" v-model="CHECKSTATE">
-                    <div class="row_button">未通过</div>
-                  </label>
-                </div>
-              </div>
-            </div>-->
           </div>
         </div>
       </div>
@@ -196,16 +177,6 @@ import {selectTime,getTime,getDate,DateAdd,selecTion} from "../../../../static/u
 				this.$emit('changShow',this.INFOR)
 			},
 		    addOrder() {//确定
-//		    	if(this.clientName==''){
-//		    		mui.alert("请选择客户")
-//		    		return false
-//		    	}else if (this.comPany==''){
-//		    		mui.alert("请选择开票公司")
-//		    		return false
-//		    	}else if (this.SECTION==''){
-//		    		mui.alert("请选择部门")
-//		    		return false
-//		    	}
 		      	this.INFOR.msg = false;
 		      	this.INFOR.showMsg = true;
 				this.$emit('changShow',this.INFOR)
@@ -243,6 +214,3 @@ import {selectTime,getTime,getDate,DateAdd,selecTion} from "../../../../static/u
 		}
 	}
 </script>
-
-<style>
-</style>

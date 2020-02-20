@@ -287,9 +287,6 @@
 </template>
 
 <script>
-//	import '../../../static/utils/jquery.min.js'
-	import '../../../static/utils/selectFilter.js'
-	import '../../../static/css/selectFilter.css'
 	import {pullRefresh} from '../../../static/utils/public.js'
 	export default {
 	data() {
@@ -308,7 +305,6 @@
 	},
 	mounted() {
 		var that = this
-		//pullRefresh()
 		//这里是初始化
 		$('#filter-box').selectFilter({
 			callBack: function(val) {
@@ -364,7 +360,6 @@
 		},
 		jumpTo(){
 			console.log('hi')
-			//this.$router.push({path:"/moneyDetail",query:{id:id}})
 		}
 	}
 }
@@ -395,27 +390,26 @@
 	#seven>.filter-list,#eight>.filter-list,#nine>.filter-list, {
 		position: fixed;
 		width: 100%;
-		/*top: 38px;*/
 		top: 123px !important;
 		left: 0;
 	}
-	
+
 	.item {
 		width: 240px;
 		height: 32px;
 		margin: 100px auto;
 	}
-	
+
 	.filter-box {
 		display: inline-block;
 		width: 32.2%;
 	}
-	
+
 	.mui-control-content {
 		background-color: white;
 		min-height: 215px;
 	}
-	
+
 	.mui-control-content .mui-loading {
 		margin-top: 50px;
 	}

@@ -11,7 +11,6 @@
 			<div class="tableSearch">
 				<div style="width: 70%;">
 					<input type="text" name="" id="search" value="" placeholder="请输入关键字(代码联想)"/>
-					<!--<i class="iconfont icon-sousuo3"></i>-->
 				</div>
 				<div class="searchBtn" @click="alert()">
 						搜索
@@ -37,7 +36,6 @@
 
 <script>
 	import {selectTime,getTime,getDate,mustFill} from '../../../static/utils/public.js'
-	import pages from "../assembly/pagination.vue"/*分页*/
 	import list from "./order-List.vue"/*列表*/
 	import search from "./views/order-list-search.vue";/*搜索*/
 	export default{
@@ -53,7 +51,7 @@
 			}
 		},
 		components:{
-			pages,list,search
+			list,search
 		},
 		computed:{
 			spanColor(){

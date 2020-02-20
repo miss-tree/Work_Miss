@@ -81,13 +81,6 @@
 
 <script>
 	export default {
-		data() {
-			return {}
-		},
 		props: ["INFOR"],
 	}
 </script>
-
-<style>
-
-</style>

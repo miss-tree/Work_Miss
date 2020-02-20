@@ -28,18 +28,6 @@
 	            </div>
 	          </div>
       		</div>
-          <!--<div v-show="TICKETTYPE=='折扣发票'" style="margin-top: 10px;">
-          	<countadd :DISCOUNTORDER="DISCOUNTORDER" @getDiscount='getInfor'></countadd>
-          </div>-->
-      		<!--<div class="submitBtn">
-	          <button
-	            type="button"
-	            style="width: 30%; padding: 10px;"
-	            id="update"
-	            @click="checkDiscount()"
-	            class="mui-btn update mui-btn-block mui-btn-primary"
-	          >确定</button>
-	        </div>-->
       	</div>
       	<div><!-- v-show="checkType!=false"-->
       		<div class="form_title">客户信息</div>
@@ -212,7 +200,6 @@
             <!--折扣开始-->
             <div class="form_title">折扣项目</div>
           	<countadd :DISCOUNTORDER="DISCOUNTORDER" @getDiscount='getInfor'></countadd>
-            <!--<countdetail :DISCOUNTINFOR="DISCOUNTINFOR"></countdetail>-->
 	          <!--折扣结束-->
           </div>
           <div class="margin_top"></div>
@@ -255,8 +242,6 @@
 </template>
 
 <script>
-import "../../../static/utils/selectFilter.js"; /*自定义下拉框*/
-import "../../../static/css/selectFilter.css";
 import { mustFill } from "../../../static/utils/public.js";
 import orderdetail from "./views/order-list-detail.vue"; /*退货订单详情*/
 import countadd from "./views/order-discount.vue"; /*折扣添加*/
@@ -266,7 +251,6 @@ export default {
     return {
     	checkType:false,//是否选择了发票类型
       TICKETTYPE: "", //退货数量类型
-      //checkData:[],
       ISSEND:'',//是否寄存
       ORDERCUSTOMERINFOR: {
         name: "",

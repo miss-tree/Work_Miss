@@ -9,14 +9,7 @@
 	    <div class="mui-content">
 	    	<!--搜索框-->
 			<div class="tableSearch justify_content">
-				<!--<div style="width: 80%;">-->
-					<!--<input type="text" name="" id="search" value="" placeholder="请输入关键字(代码联想)"/>-->
-					<!--<i class="iconfont icon-sousuo3"></i>-->
 					<inputcode @searchVal="getClientName"></inputcode>
-				<!--</div>-->
-				<!--<div class="searchBtn" @click="alert()">
-						搜索
-				</div>-->
 				<div style="margin-left: 15px;" @click="alert()">
 					<i class="iconfont icon-fenxiaosousuo" 
 						style="color: #fff;display: inline-block; font-size: 30px;margin-top: 5px;"></i>
@@ -39,7 +32,6 @@
 
 <script>
 	import {selectTime,getTime,getDate} from '../../../static/utils/public.js'
-	import pages from "../assembly/pagination.vue"/*分页*/
 	import list from "./views/my-ticket-List.vue"/*列表*/
 	import inputcode from "./views/client-code.vue"/*联想搜索框*/
 	import search from "./views/my-search.vue";/*搜索*/
@@ -58,9 +50,7 @@
 				{name:"华润医药控股有限公司",orderNum:'98974556',price:"92.05",num:320,money:8000,pro:"六味地黄丸360丸",state:'已开票',person:'杨修',dateTime:'2017-07-01',id:65677},]
 			}
 		},
-		components:{
-			pages,list,search,inputcode
-		},
+		components:{list,search,inputcode},
 		watch:{
 			clientName(newVal,oldVal){//条件重新筛选后更新isPro
 				if(newVal!=''){
@@ -92,6 +82,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

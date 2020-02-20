@@ -6,7 +6,6 @@
 				<div class="Row">
 					<div class="col_40">客户名称</div>
 					<div class="col_20">业务状态</div>
-					<!--<div class="col_10">数量</div>-->
 					<div class="col_20">应收款</div>
 					<div class="col_20">未核销金额</div>
 				</div>
@@ -47,6 +46,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

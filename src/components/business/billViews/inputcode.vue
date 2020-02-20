@@ -71,18 +71,6 @@
 					window.open('https://www.baidu.com/s?wd=' + this.tl);
 					this.tl = '';
 				}
-				//调用访问百度接口数据
-				/*    this.$http.jsonp('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su',{
-				        wd:this.tl
-				    },{
-				        jsonp:'cb'
-				    }).then(function(res){
-				        this.myData = res.data.s;
-				    },function(res){
-
-				    });
-				    * 当有接口用上面方法
-				    * */
 				/*下面是自定义给的数据*/
 				this.myData = ['江西九思医药有限公司', '广东恒林源药业有限公司', '江西九思医药有限公司',
 					'江西三辰医药有限公司', '广州医药集团有限公司', '中国医药集团总公司', '华东医药股份有限公司'
@@ -113,6 +101,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

@@ -57,10 +57,6 @@ export default {
 					_this.initLocation = true;	
 					//console.log('center:', _this.center)	// 如果这里直接使用this是不行的
 				},{enableHighAccuracy: true})
-//    console.log(BMap, map)
-//    this.center.lng = 116.404
-//    this.center.lat = 39.915
-//    this.zoom = 18
     },
     updateCirclePath (e) {//改变点的位置
       this.circlePath.center = e.target.getCenter()

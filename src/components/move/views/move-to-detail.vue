@@ -35,14 +35,6 @@
 
 <script>
 	export default{
-		data(){
-			return{
-			}
-		},
 		props:["TOINFOR"]
 	}
 </script>
-
-<style>
-
-</style>

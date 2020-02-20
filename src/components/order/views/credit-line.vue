@@ -56,13 +56,7 @@
 
 <script>
 	export default {
-	data() {
-		return {};
-	},
 	props: ["KEHUINFOR"],
 	methods: {}
 	};
 </script>
-
-<style>
-</style>

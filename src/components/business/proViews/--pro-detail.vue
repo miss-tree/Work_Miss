@@ -59,13 +59,6 @@
 		    			</label>
 					<div class="form_row_right">{{item.exam}}</div>
 				</div>
-				<!--<div class="form_row">
-					<label class="form_row_left huise" id="where">
-		              	  开票日期
-		                <span class="span_red"></span>
-		              	</label>
-					<div class="form_row_right">{{item.beginTime}}</div>
-				</div>-->
 			</div>
 			<!--统计-->
 			<div class="mui-bar-tab mui-bar" style="height: 40px;padding: 0 15px;">
@@ -73,7 +66,6 @@
 					<span class="span_15px">产品数量：{{INFOR.length}}</span>
 					<span class="span_15px" style="margin-left: 5px;">开票金额：{{MONEY}}</span>
 				</div>
-				<!--<div class="mui-btn mui-btn-primary applyBtn" @click="routerTo">申请</div>-->
 			</div>
 		</div>
 	</div>
@@ -81,9 +73,6 @@
 
 <script>
 	export default {
-		data(){
-			return {}
-		},
 		props: ["INFOR"],
 		computed:{
 			MONEY(){/*合计金额*/
@@ -92,7 +81,3 @@
 		}
 	}
 </script>
-
-<style>
-
-</style>

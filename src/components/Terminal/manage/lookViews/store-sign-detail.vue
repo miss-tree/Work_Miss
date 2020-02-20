@@ -16,12 +16,6 @@
 		    			</label>
 					<div class="form_row_right">{{INFOR.time}}</div>
 				</div>
-				<!--<div class="form_row">
-					<label class="form_row_left huise" id="storeAttr">
-		    				门店类型
-		    				<span class="span_red"></span>
-		    			</label>
-					<div class="form_row_right">{{INFOR.type}}</div>
 				</div>-->
 				<div class="form_row">
 					<label class="form_row_left huise">
@@ -30,13 +24,6 @@
 		    			</label>
 					<div class="form_row_right">{{INFOR.isYB}}</div>
 				</div>
-				<!--<div class="form_row">
-					<label class="form_row_left huise" id="money">
-		    				月营业额
-		    				<span class="span_red"></span>
-		    			</label>
-					<div class="form_row_right">{{INFOR.money}}</div>
-				</div>-->
 				<div class="form_row">
 					<label class="form_row_left huise" for="" id="level">
 		    				门店级别
@@ -77,7 +64,6 @@
 				</div>
 				<div class="padding-lr padding_bb">
 						<div class="detail_bz">{{INFOR.bz}}</div>
-					<!--<textarea class="textarea" readonly="readonly" cols="38" v-model="INFOR.bz"></textarea>-->
 				</div>
 				<div class="bottomOver"></div>
 			</div>
@@ -87,13 +73,6 @@
 
 <script>
 	export default {
-		data() {
-			return {}
-		},
 		props: ["INFOR"],
 	}
 </script>
-
-<style>
-
-</style>

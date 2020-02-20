@@ -4,10 +4,6 @@
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 			<h1 class="mui-title">选项卡切换+下拉刷新（div模式）</h1>
 		</header>
-		<!--<header class="mui-bar mui-bar-nav">-->
-			<!--<router-link class="mui-icon mui-icon-left-nav mui-pull-left"></router-link>-->
-			<!--<h1 class="mui-title"></h1>-->
-		<!--</header>-->
 		<div class="mui-content">
 			<div id="slider" class="mui-slider mui-fullscreen">
 				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
@@ -459,12 +455,10 @@
 	mounted(){
 		pullRefresh()
 	},
-//	methods: {}
 	}
 </script>
 
 <style>
-	/** { touch-action: pan-y; }*/ 
 	.mui-bar~.mui-content .mui-fullscreen {
 		top: 44px;
 		height: auto;
@@ -504,10 +498,6 @@
 	}
 	
 	.mui-pull-top-tips .mui-pull-loading {
-		/*-webkit-backface-visibility: hidden;
-		*-webkit-transition-duration: 400ms;
-		*transition-duration: 400ms;
-		* */
 		margin: 0;
 	}
 	
@@ -517,7 +507,6 @@
 	}
 	
 	.mui-pull-top-wrapper .mui-icon.mui-reverse {
-		/*-webkit-transform: rotate(180deg) translateZ(0);*/
 	}
 	
 	.mui-pull-bottom-tips {

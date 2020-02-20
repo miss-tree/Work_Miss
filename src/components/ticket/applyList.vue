@@ -9,14 +9,7 @@
 	    <div class="mui-content">
 	    	<!--搜索框-->
 			<div class="tableSearch justify_content">
-				<!--<div style="width: 85%;">
-					<input type="text"  id="search" v-model="clientName" placeholder="请先选择客户名称"/>
-					<i class="iconfont icon-sousuo3"></i>
-				</div>-->
 				<inputcode @searchVal="getClientName"></inputcode>
-				<!--<div class="searchBtn" @click="getPro()">
-						搜索
-				</div>-->
 				<div  @click="alert()">
 						<i class="iconfont icon-fenxiaosousuo lookAlert" ></i>
 				</div>
@@ -31,8 +24,6 @@
 			</div>
 			<div v-show="clientName!=''">
 				<list :ORDERLIST="ORDER" @getCheck="getCheckInfor"></list>
-				<!--<tablist :ORDERLIST="ORDER" @getCheck="getCheckInfor" v-show="isPro==false"></tablist>-->
-				<!--<tablist :ORDERLIST="searchOrder" @getCheck="getCheckInfor" v-show="isPro"></tablist>-->
 				<!--订单列表结束-->
 				<!--显示申请-->
 				<div class="mui-bar-tab mui-bar" style="height: 40px;padding: 0 15px;"><!-- v-show="checkData.length!=0"-->
@@ -42,9 +33,6 @@
 					</div>
 					<div class="mui-btn mui-btn-primary applyBtn" @click="routerTo">申请</div>
 				</div>
-		   		<!--分页-->
-		   		<!--<pages></pages>-->
-		   		<!--分页结束-->
 			</div>
 	    </div>
 	</div>
@@ -52,7 +40,6 @@
 
 <script>
 	import {selectTime,getTime,getDate,mustFill} from '../../../static/utils/public.js'
-	import pages from "../assembly/pagination.vue"/*分页*/
 	import list from "./views/table-List.vue"/*列表*/
 	import tablist from "./views/apply-List.vue"/*列表*/
 	import inputcode from "./views/client-code.vue"/*联想搜索框*/
@@ -78,9 +65,7 @@
 				{name:"华润医药控股有限公司",orderNum:'TEK17665458',price:"92.05",num:320,money:'8000',pro:"六味地黄丸360丸",state:'已签收',person:'吕布',dateTime:'2017-07-01',id:65677},]
 			}
 		},
-		components:{
-			pages,list,search,tablist,inputcode
-		},
+		components:{list,search,tablist,inputcode},
 		watch:{
 			ORDER(newVal,oldVal){//条件重新筛选后更新isPro
 				if(newVal){
@@ -130,19 +115,9 @@
 				if(this.checkData.length==0){
 					mui.alert("请选择订单")
 				}else{
-//					mui.alert("通过对比数据判断是否同一客户后跳转",function(){
 						that.$router.push({path:"/applyTicket"})
-//					})
 				}
 			}
 		}
 	}
 </script>
-
-<style>
-	/*.iconRight{
-		position: absolute;
-		top: 0;
-		right: 15px;
-	}*/
-</style>

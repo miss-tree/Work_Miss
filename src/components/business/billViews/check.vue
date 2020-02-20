@@ -23,38 +23,17 @@
 					:class="{active:curIndex==1,getSearch:selectCheck.length!=0}"
 					@click="curIndex=1">
 					<div>开票公司</div>
-					<!--<div>{{selectCheck}}</div>-->
 				</div>
 				<div class="screen_table_left_div"
 					:class="{active:curIndex==2,getSearch:setDate!=''}"
 					@click="curIndex=2">	
 					<div>开票日期</div>
-					<!--<div>{{setDate}}</div>-->
 				</div>
-				<!--<div class="screen_table_left_div"
-					:class="{active:curIndex==3,line_30px:PRONAME.length==0}"
-					@click="curIndex=3">	
-					<div>产品选择</div>
-					<div><span v-for="item in PRONAME">{{item}}、</span></div>
-				</div>-->
 				<div class="screen_table_left_div"
 					:class="{active:curIndex==4,getSearch:NATURE.length!=0}"
 					@click="curIndex=4">	
 					<div>经营性质</div>
-					<!--<div><span v-for="item in NATURE">{{item}}、</span></div>-->
 				</div>
-				<!--<div class="screen_table_left_div"
-					:class="{active:curIndex==5,line_30px:HANDLE==''}"
-					@click="curIndex=5">	
-					<div>操作方式</div>
-					<div>{{HANDLE}}</div>
-				</div>
-				<div class="screen_table_left_div"
-					:class="{active:curIndex==6,line_30px:PART==''}"
-					@click="curIndex=6">	
-					<div>部门</div>
-					<div>{{PART}}</div>
-				</div>-->
 			</div>
 			<!--左边-->
 			<!--右边-->

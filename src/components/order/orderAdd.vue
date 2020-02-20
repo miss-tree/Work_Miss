@@ -44,22 +44,6 @@
 										<option>{{item.text}}</option>
 									</select>
 						</div>
-						<!--<div class="form_row_right">
-							  <input type="text" v-show="CLIENT==-1" data="required"  v-model="CLIENT" placeholder="请选择"/>
-							<van-dropdown-menu >
-							  <van-dropdown-item v-model="CLIENT" :options="option1" />
-							</van-dropdown-menu>
-						</div>-->
-		    			<!--<input type="text" id="clientName" class="form_row_right" data="required" @click="showPicker = true" v-model="CLIENT" name="CLIENT" placeholder="请选择" />
-		    			<van-popup v-model="showPicker" position="bottom">
-						  <van-picker
-						    show-toolbar
-						    title="客户名称"
-						    :columns="columns"
-						    @cancel="showPicker = false"
-						    @confirm="onConfirm"
-						  />
-						</van-popup>-->
 		    		</div>
 		    		<div class="form_row">
 		    			<label class="form_row_left huise" for="">
@@ -93,7 +77,6 @@
 						    @confirm="onConfirm"
 						  />
 						</van-popup>
-		    			<!--<input type="text" class="form_row_right" data="required" v-model="SECTION" name="section" placeholder="请选择" id="selection"/>-->
 		    		</div>
 		    		<div class="form_row">
 		    			<label class="form_row_left huise" for="" id="company">
@@ -113,7 +96,6 @@
 						</van-popup>
 		    		</div>
 	    		</div>
-	    		  <!--v-show="showInfor==true"-->
 	    		<div>
 	    			<!--订单信息-->
 	    			<div class="form_title">订单详情</div>
@@ -182,10 +164,7 @@
 				sectionArr:[{text:'销售部'},{text:'电商部'},{text:'OTC推广部'},{text:'大KA部'},{text:'财务部'},{text:'市场部'},{text:'财务组'}],//
 				COMPANY:'',//开票公司
 				companyArr:['泰恩康股份','马鞍山天福康','电商公司','安徽维泰利'],
-				ORDER:[
-//				{name:'红花油',num:2,price:5,money:'',M_num:'',M_money:'',unit:''},
-//				{name:'乌鸡丸',num:5,price:35,money:'',M_num:'',M_money:'',unit:''}
-				],//订单
+				ORDER:[],//订单
 				PROLIST:[{text:"乌鸡丸"},{text:"红花油"},{text:"和胃"}],
 				editOrder:{name:'红',num:12,price:6,money:'',M_num:'',M_money:'',unit:'件',index:''},//订单添加编辑
 				editShow:false,
@@ -208,7 +187,6 @@
 		watch:{
 			CLIENT(newVal,oldVal){//监听是否有选客户
 				if(newVal!=''){//选择客户就请求客户数据
-					//this.applyAjax()
 					this.showInfor=true;
 				}else{
 					this.showInfor=false;
@@ -240,7 +218,6 @@
 		    onConfirm(value, index){//vant的选择器=>选择部门
 		    	this.SECTION=value,
 		    	this.showPicker=false
-		      //Toast(`当前值：${value}, 当前索引：${index}`);
 		    },
 		    getVal(value,index){//选择公司
 		    	this.COMPANY=value,
@@ -261,7 +238,6 @@
 					})
 			},
 			mustFull(){
-				//mustFill()
 				var isOk=mustFill();
 				if(isOk.length==0){
 					console.log('hi')
@@ -270,6 +246,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

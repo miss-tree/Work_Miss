@@ -4,9 +4,7 @@
 		<div>
 			<div id="dateTable">
 				<div class="Row">
-					<!--<div class="col_20">省区</div>-->
 					<div class="col_60">产品名称</div>
-					<!--<div class="col_10">数量</div>-->
 					<div class="col_20">供货价</div>
 					<div class="col_20">时间</div>
 				</div>
@@ -15,9 +13,6 @@
 						<div class="col_60">
 							<span class="span_13px nowrap">{{item.proName}}</span>
 						</div>
-						<!--<div class="col_10" style="text-align: center;">
-							<span class="span_13px ">{{item.num}}</span>
-						</div>-->
 						<div class="col_20" style="text-align: center;" >
 							<span class="span_13px">{{item.price}}</span>
 						</div>
@@ -34,9 +29,6 @@
 
 <script>
 	export default {
-		data() {
-			return {}
-		},
 		props: ["ORDERLIST"],
 		methods: {
 			routerTo(item,index){//页面跳转
@@ -45,6 +37,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

@@ -3,7 +3,6 @@
     <div class="mongolia" v-show="topLayer" @click="closeAlert"></div>
     <!--蒙层-->
     <!--收货信息-->
-    <!--<div class="form_title">收货人</div>-->
     <div class="form_div">
       <ul class="ul_List">
         <li class="tableList" v-for="(item,index) in REINFOR" @click="changeInfor(index)">
@@ -123,11 +122,6 @@
       </div>
       <!--添加弹窗结束-->
     </div>
-    <!--<div class="form_div" style="margin-top: 5px;">
-		<div class="form_row " style="justify-content: center;" @click="whereAlert()">
-		    <span class=" addBtn text_algin">十添加收货信息</span>
-		</div>
-    </div>-->
     <!--收货信息结束-->
   </div>
 </template>
@@ -236,6 +230,3 @@ export default {
   }
 };
 </script>
-
-<style>
-</style>

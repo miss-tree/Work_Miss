@@ -8,7 +8,6 @@
                             v-model="putValue" 
                             @keyup.enter="sure()"
                             >
-                            <!--v-on:input="filterPutValue()"-->
                             <figure class="close">
                                 <i class="u-svg u-svg-empty" :class="{zshow:putValue.length}" @click="clear()"></i>
                             </figure>
@@ -50,28 +49,15 @@
 </template>
 
 <script>
-//import axios from "axios";
-//import api from "@/api/index.js";
 export default {
   data() {
     return {
-//      list:[ 
-//          {ssList:""},{artists:""},{playlists:""}
-//          ],
 		ssList:"",
       hotSearch:['北京','北海','东北','上海','武汉','东京','广州','广元市','上饶','上水市'],
       putValue: "",
       hisList:[]
     };
   },
-//mounted: async function() {
-//  try {
-//    let res = await axios.get(api.hotSearch);
-//    this.hotSearch = res.data.result.hots;
-//  } catch (e) {
-//    console.log(e);
-//  }
-//},
   methods: {
     clear() {
         this.putValue=""

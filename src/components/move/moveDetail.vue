@@ -120,10 +120,7 @@
 </template>
 
 <script>
-	import getTop from "../assembly/getTop.vue"; /*回到顶部*/
 	import moveto from "./views/move-to-detail.vue"/*职位调整组件*/
-	import lookimg from "../assembly/lookimg.vue"/*图片查看*/
-	import timeLine from "../assembly/timeLine.vue"; /*流程进度*/
 	import {
 		getTime,
 	} from "../../../static/utils/public.js";
@@ -164,8 +161,7 @@
 			};
 		},
 		components: {
-			getTop,moveto,timeLine,
-			lookimg
+			moveto
 		},
 		mounted() {
 			this.sureTime=getTime();
@@ -193,6 +189,3 @@
 		}
 	};
 </script>
-
-<style>
-</style>

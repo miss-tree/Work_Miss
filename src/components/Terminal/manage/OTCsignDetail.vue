@@ -34,10 +34,8 @@
 </template>
 
 <script>
-	import getTop from "../../assembly/getTop.vue"; /*回到顶部*/
 	import storeMsg from "./signViews/store-sign-detail.vue"
 	import storeMap2 from "./signViews/store-sign-detail-map.vue"
-	import timeLine from "../../assembly/timeLine.vue"; /*流程进度*/
 	export default{
 		data(){
 			return{
@@ -50,8 +48,6 @@
 						label:"药店地址：广东省广州市天河区棠下二社新围中心路17号锦达信商务大厦A座",
 						content:"签到位置：我是在这里的",
 						view: {
-		//					lng: 113.36811,
-		//					lat: 23.14003
 							lng: 113.3831,
 							lat: 23.13013
 						},/*在缩放比例为15的情况下：lng偏移-0.015，lat偏移+0.01*/
@@ -87,11 +83,6 @@
 				},
 			}
 		},
-		components:{getTop,storeMsg,storeMap2,timeLine},
-		methods:{
-		}
+		components:{storeMsg,storeMap2},
 	}
 </script>
-
-<style>
-</style>

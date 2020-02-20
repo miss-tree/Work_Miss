@@ -39,7 +39,6 @@
 	    		<ul class="mui-table-view mui-table-view-radio" @click="changeOne()">
 					<li class="mui-table-view-cell" id="cao">
 						<label class="mui-navigate-right" for="cao">
-							<!--<input class="playnone" type="radio" name="ss" v-model="checkss" value="草稿" />-->
 							草稿
 						</label>
 					</li>
@@ -72,7 +71,6 @@
 					<span class="span_15px">数量：XXX</span>
 					<span class="span_15px" style="margin-left: 5px;">金额：XXX.XX元</span>
 				</div>
-				<!--<div class="mui-btn mui-btn-primary applyBtn" @click="routerTo">申请</div>-->
 			</div>
 	    </div>
 	</div>

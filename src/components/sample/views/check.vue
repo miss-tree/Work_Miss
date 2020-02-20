@@ -8,10 +8,6 @@
               <div @click="setChang()">确定</div>
             </div>
           </div>
-			<!--<div style="position: fixed;bottom: 0;left: 0;width: 100%;height: 40px;line-height: 40px;z-index: 99;text-align: center;background-color: red;"
-				@click="setChang">
-				底部
-			</div>-->
 		<!--底部-->	
 		<!--选项卡-->
 		<div style="display: flex;width: 100%;height: calc(100% - 44px);top: 44px;">

@@ -1,10 +1,6 @@
 <template>
 	<div>
-		<!--<label style="font-size: 15px;">
-			<input type="text" v-model="keyword" id="txtAddress" placeholder="请输入搜索地址" style="width: 100%;">
-		</label>-->
 		<baidu-map :center="view" :zoom="15">
-			<!-- @ready="handlerBaiduMapReady" @click="setNewIcon"-->
 			<bm-view class="map"></bm-view>
 			<!--比例尺-->
 			<bm-scale anchor="BMAP_ANCHOR_TOP_LEFT"></bm-scale>
@@ -13,15 +9,6 @@
 				:icon="{url:require('../../../../../static/assets/location.png'),size:{width:25,height:25}}" 
 				class="mapMark" >
 			</bm-marker>
-			<!--获取当前位置-->
-			<!--<bm-geolocation anchor="BMAP_ANCHOR_BOTTOM_RIGHT" 
-		    	:showAddressBar="true" :autoLocation="false" @locationSuccess="getlocationPoint"
-		    	:icon="{url:require('../../../../../static/assets/location.png'),size:{width:25,height:25}}"
-		    	></bm-geolocation>-->
-			<!--搜索-->
-			<!--<bm-local-search :keyword="keyword" :auto-viewport="true" @click="changIcon==true"
-		    	 :location="location" :forceLocal="true" :icon="null"
-		    	 ></bm-local-search>-->
 			<!--圆范围-->
 			<bm-circle :center="circlePath.center" 
 				:radius="circlePath.radius" stroke-color="blue" fillColor="blue" 
@@ -62,8 +49,6 @@
 				}
 			},
 			handlerBaiduMapReady({BMap,map}) {
-				// let _this = this;   // 设置一个临时变量指向vue实例，因为在百度地图回调里使用this，指向的不是vue实例；
-				// var geolocation = new BMap.Geolocation();
 				new BMap.Geolocation().getCurrentPosition((result) => {
 					this.location = result.address.city //获取城市地址
 					this.center = {
@@ -90,7 +75,3 @@
 		}
 	}
 </script>
-
-<style>
-
-</style>

@@ -25,33 +25,6 @@
                 </div>
               </div>
             </div>
-            <!--<div class="form_title">申请状态</div>
-            <div class="form_div padding_tb_5px">
-              <div class="alertRow">
-                <div class="form_row_right flex justify_content">
-                <label>
-                    <input type="checkbox" name="CHECKSTATE" value="草稿" v-model="CHECKSTATE">
-                    <div class="row_button">草稿</div>
-                  </label>
-                  <label>
-                    <input type="checkbox" name="CHECKSTATE" value="待审" v-model="CHECKSTATE">
-                    <div class="row_button">待审</div>
-                  </label>
-                  <label>
-                    <input type="checkbox" name="CHECKSTATE" value="通过" v-model="CHECKSTATE">
-                    <div class="row_button">通过</div>
-                  </label>
-                </div>
-              </div>
-              <div class="alertRow" style="margin-top: 8px;">
-                <div class="form_row_right flex justify_content">
-                  <label>
-                    <input type="checkbox" name="CHECKSTATE" value="驳回" v-model="CHECKSTATE">
-                    <div class="row_button">驳回</div>
-                  </label>
-                </div>
-              </div>	
-            </div>-->
             <div class="form_title">区域范围</div>
             <div class="form_div padding_tb_5px">
               <div class="form_row">
@@ -119,7 +92,7 @@
 			        { text: "C" },
 			        { text: "D" },],
 				checkWhere:[],
-		        second:[],   
+		        second:[],
 			}
 		},
 		props:["alertShow"],
@@ -138,7 +111,6 @@
 			selectTime();
 			this.checkWhere= OTCData.map(row=>({text:row.text}))
     		selecTion("part", this.checkWhere);
-//  		selecTion("compony", this.comArr);
 		},
 		methods:{
 			closeAlert(){//点击关闭
@@ -182,6 +154,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

@@ -3,7 +3,6 @@
 		<header class="mui-bar mui-bar-nav">
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" ></a>		    
 		    <h1 class="mui-title">签到记录</h1>
-		    <!--<span class="top-left">提交</span>-->
 		</header>
 		<div class="bar-ge"></div>
 		<div class="margin-t">
@@ -52,10 +51,6 @@
 <script>
 	import gongneng from  "../gongneng.vue"
 	export default{
-		data(){
-			return{
-			}
-		},
 		components:{
 			gongneng
 		},
@@ -66,7 +61,3 @@
 		}
 	}
 </script>
-
-<style lang="scss">
-
-</style>

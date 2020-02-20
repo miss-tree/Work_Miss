@@ -95,13 +95,6 @@
         </div>
       </div>
       <div style="height: 10px;"></div>
-      <!--统计-->
-      <!--<div class="mui-bar-tab mui-bar" style="height: 40px;padding: 0 15px;">
-				<div class="bottomWidth flex justify_content">
-					<span class="span_15px">产品数量：{{INFOR.length}}</span>
-					<span class="span_15px" style="margin-left: 5px;">开票金额：{{MONEY}}</span>
-				</div>
-      </div>-->
     </div>
   </div>
 </template>

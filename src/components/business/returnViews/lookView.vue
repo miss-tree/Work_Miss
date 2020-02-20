@@ -64,16 +64,13 @@
 		},
 		watch:{
 			tl(newVal,oldVal){
-				//if(newVal){
 					this.$emit("searchVal", newVal)
-				//}
 			}
 		},
 		methods: {
 			getSelectVal(e){
 				this.startVal=e.target.innerText
 				this.select1=false
-//				console.log(e.target.innerText)
 			},
 			changeOne(){
 				this.select1=!this.select1;
@@ -149,6 +146,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

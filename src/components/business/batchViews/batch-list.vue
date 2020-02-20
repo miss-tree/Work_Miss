@@ -23,9 +23,6 @@
 						<div class="col_20" style="padding: 0 5px;">
 							<div class="tabRightBtn" @click="routerTo">详情</div>
 						</div>
-						<!--<div class="col_20"  style="text-align: center;">
-							<span class="span_13px ">{{item.time}}</span>
-						</div>-->
 					</div>
 				</div>
 			</div>
@@ -36,9 +33,6 @@
 
 <script>
 	export default {
-		data() {
-			return {}
-		},
 		props: ["ORDERLIST"],
 		methods: {
 			routerTo(item,index){//页面跳转

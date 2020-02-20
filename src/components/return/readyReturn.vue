@@ -79,8 +79,6 @@
 </template>
 
 <script>
-	import pages from "../assembly/pagination.vue"	/*分页*/
-	import inputcode from "../assembly/inputcode.vue"/*联想搜索框*/
 	import list from "./order-List.vue"	/*列表*/
 	import search from "./views/order-list-search.vue"/*搜索弹框*/
 	import {selectTime,getTime,getDate,DateAdd,mustFill,selecTion} from '../../../static/utils/public.js'
@@ -103,7 +101,7 @@
 			}
 		},
 		components:{
-			inputcode,pages,list,search
+      list,search
 		},
 		mounted(){
 			this.$data.sureTime = getTime()
@@ -124,6 +122,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

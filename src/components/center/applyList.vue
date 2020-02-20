@@ -53,14 +53,5 @@
 		components:{
 			gongneng
 		},
-		methods:{
-//			jump(){
-//				this.$router.go(-1)
-//			}
-		}
 	}
 </script>
-
-<style lang="scss">
-	
-</style>

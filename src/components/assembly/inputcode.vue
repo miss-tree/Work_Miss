@@ -35,9 +35,7 @@
 		},
 		watch:{
 			tl(newVal,oldVal){
-				//if(newVal){
 					this.$emit("searchVal", newVal)
-				//}
 			}
 		},
 		methods: {
@@ -105,6 +103,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

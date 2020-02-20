@@ -36,12 +36,8 @@
 	},
 	methods: {
 		updata(){
-//			console.log($event)
 				this.$emit('updata',this.dateday)
 		}
 	}
 	}
 </script>
-
-<style>
-</style>

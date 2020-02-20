@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import permission from './permission'
-//import createLogger from 'vuex/dist/logger' /*内置的logger插件,用于作为调试使用*/
+import createLogger from 'vuex/dist/logger' /*内置的logger插件,用于作为调试使用*/
 
 Vue.use(Vuex)
 export default new Vuex.Store({

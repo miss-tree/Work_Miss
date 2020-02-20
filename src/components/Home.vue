@@ -3,7 +3,6 @@
   	<div>
   		<!--头部-->
   		<header class="mui-bar mui-bar-nav back_title">
-		  			<!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
 		  	    <h1 class="mui-title"><!--<img src="../assets/logo.png" class="logo"/>-->企业工作台</h1>
 		  		</header>
   		<!--选项卡-->
@@ -30,24 +29,16 @@
 				<div class="margin_top" style="margin-top: 5px;">
 						<ul class="mui-table-view mui-grid-view mui-grid-9 back_theme">
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<!--<a href="#">-->
 									<span class="span_red">5</span>
 									<div class="mui-media-body">紧急任务</div>
-								<!--</a>-->
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<!--<router-link  to='/page'>-->
-										<!--<a href="#">-->
 									<span class="">0</span>
 									<div class="mui-media-body">已完成</div>
-									<!--</a>-->
-								<!--</router-link>-->
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<!--<router-link  to='/picker'>-->
 									<span class="">0</span>
 									<div class="mui-media-body">未完成</div>
-								<!--</router-link>-->
 							</li>
 						</ul>
 					</div>
@@ -64,54 +55,6 @@
 									<div class="mui-media-body">{{item.title}}</div>
 								</router-link>
 							</li>
-							<!--<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<router-link  to='/orderReturn'>
-									<span class="iconfont icon-tuihuoliebiao"></span>
-									<div class="mui-media-body">退货申请</div>
-								</router-link>
-							</li>
-							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<router-link  to='/myTicket'>
-									<span class="iconfont icon-invoice-register"></span>
-									<div class="mui-media-body">开票申请</div>
-								</router-link>
-							</li>
-							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<router-link  to='/BxList'>
-									<span class="iconfont icon-shenpibaoxiao"></span>
-									<div class="mui-media-body">报销管理</div>
-								</router-link>
-							</li>
-							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<router-link  to='/moneyList'>
-									<span class="iconfont icon-xinzi0101"></span>
-									<div class="mui-media-body">薪资</div>
-								</router-link>
-							</li>-->
-							<!--<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<a href="#">
-									<span class="iconfont icon-yunyingshujuzhongduan"></span>
-									<div class="mui-media-body">终端管理</div>
-								</a>
-							</li>-->
-							<!--<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<router-link  to='/leave'>
-									<span class="iconfont icon-qingjialeibie"></span>
-									<div class="mui-media-body">请假</div>
-								</router-link>
-							</li>
-							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<router-link  to='/seal'>
-									<span class="iconfont icon-yinzhang"></span>
-									<div class="mui-media-body">印章管理</div>
-								</router-link>
-							</li>
-							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<router-link  to='/moveTab'>
-									<span class="iconfont icon-gsg-renshiyidong"></span>
-									<div class="mui-media-body">异动管理</div>
-								</router-link>
-							</li>-->
 						</ul>
 					</div>
 					<div class="mui-slider-item">
@@ -136,10 +79,8 @@
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
 								<router-link  to='/template'>
-									<!--<a href="#">-->
 									<span class="mui-icon mui-icon-chatbubble"></span>
 									<div class="mui-media-body">模板</div>
-									<!--</a>-->
 								</router-link>
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
@@ -149,12 +90,10 @@
 								</router-link>
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<!--<router-link  to='/iconsLight'>-->
 									<a href="#">
 									<span class="mui-icon mui-icon-search"></span>
 									<div class="mui-media-body">icons扩展</div>
 									</a>
-								<!--</router-link>-->
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
 								<!--<router-link  to='/inputs'>-->
@@ -162,51 +101,40 @@
 									<span class="mui-icon mui-icon-phone"></span>
 									<div class="mui-media-body">输入框</div>
 									</a>
-								<!--</router-link>-->
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<!--<router-link  to='/MediaList'>-->
 									<a href="#">
 									<span class="mui-icon mui-icon-gear"></span>
 									<div class="mui-media-body">图文列表</div>
 									</a>
-								<!--</router-link>-->
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<!--<router-link  to='/numbox'>-->
 									<a href="#">
 									<span class="mui-icon mui-icon-info"></span>
 									<div class="mui-media-body">数字输入框</div>
 									</a>
-								<!--</router-link>-->
 							</li>
 						</ul>
 					</div>
 					<div class="mui-slider-item">
 						<ul class="mui-table-view mui-grid-view mui-grid-9 backg">
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<!--<router-link  to='/sliderTable'>-->
 									<a href="#">
 									<span class="mui-icon mui-icon-home"></span>
 									<div class="mui-media-body">图文表格</div>
 									</a>
-								<!--</router-link>-->
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<!--<router-link  to='/sliderTitle'>-->
 									<a href="#">
 									<span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
 									<div class="mui-media-body">悬浮标题</div>
 									</a>
-								<!--</router-link>-->
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-								<!--<router-link  to='/refresh'>-->
 									<a href="#">
 									<span class="mui-icon mui-icon-chatbubble"></span>
 									<div class="mui-media-body">刷新加载</div>
 									</a>
-								<!--</router-link>-->
 							</li>
 							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
 								<a href="#">
@@ -275,8 +203,6 @@ export default {
 		swiper()
 		this.USER_ROLE=this.$store.state.USER_ROLE
 	},
-//	methods:{
-//	}
 }
 </script>
 <style >

@@ -1,7 +1,6 @@
 <template>
 	<div>
 		<baidu-map :center="IPINFOR.mapInfo.view" :zoom="17">
-			<!-- @ready="handlerBaiduMapReady" @click="setNewIcon"-->
 			<bm-view class="map"></bm-view>
 			<!--比例尺-->
 			<bm-scale anchor="BMAP_ANCHOR_TOP_LEFT"></bm-scale>
@@ -20,9 +19,6 @@
 			<bm-polyline :path="IPINFOR.mapInfo.way" stroke-color="blue" :stroke-opacity="0.5" 
 				:stroke-weight="2"></bm-polyline>
 			<!--搜索-->
-			<!--<bm-local-search :keyword="keyword" :auto-viewport="true" @click="changIcon==true"
-		    	 :location="location" :forceLocal="true" :icon="null"
-		    	 ></bm-local-search>-->
 			<!--圆范围-->
 			<bm-circle :center="IPINFOR.mapInfo.circlePath.center" :radius="IPINFOR.mapInfo.circlePath.radius" 
 				stroke-color="blue" fillColor="blue" 
@@ -101,16 +97,8 @@
 
 <script>
 	export default {
-		data() {
-			return {
-			}
-		},
 		props:["IPINFOR"],
 		methods: {
 		}
 	}
 </script>
-
-<style>
-
-</style>

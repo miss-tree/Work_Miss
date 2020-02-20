@@ -68,21 +68,3 @@
 	<!--功能组件-->
 	</div>
 </template>
-
-<script>
-	export default{
-		data(){
-			return{
-			}
-		},
-		methods:{
-//			jump(){
-//				this.$router.go(-1)
-//			}
-		}
-	}
-</script>
-
-<style>
-	
-</style>

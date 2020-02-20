@@ -11,14 +11,6 @@
 	    	<get-top></get-top>
 			<!--选项卡-->
 	        <div>
-	            <!--<div class="tabHead" id="tabHead">
-		            <div @click="curIndex=0" :class="{active:curIndex==0}">
-		              <span>概要信息</span>
-		            </div>
-		            <div @click="curIndex=1" :class="{active:curIndex==1}">
-		              <span>产品信息</span>
-		            </div>
-	            </div> -->
 	            <!--基本信息-->
 	          <div v-show="curIndex==0">
 	          	<store-msg :INFOR="STOREINFOR"></store-msg>
@@ -34,7 +26,6 @@
 </template>
 
 <script>
-	import getTop from "../assembly/getTop.vue"; /*回到顶部*/
 	import storeMsg from "./proViews/pro-detail.vue"
 	import proName from "./proViews/--pro-detail.vue"
 	export default{
@@ -50,7 +41,7 @@
 				{name:"板蓝根颗粒25袋",norms:"每袋装10克",price:4.15,num:600,unit:"包",money:0,ph:"TH65962156",beginTime:"2019-08-27",endTime:"2021-08-26",picNum:0},],
 			}
 		},
-		components:{getTop,storeMsg,proName},
+		components:{storeMsg,proName},
 		computed:{
 			changeVal(){
 				console.log('hi')
@@ -60,6 +51,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

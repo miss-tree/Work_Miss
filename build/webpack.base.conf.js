@@ -1,34 +1,15 @@
 'use strict'
-//const webpack = require('webpack');
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
-
-//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-//var webpack = require('webpack');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const webpack = require('webpack');
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
-//if(process.env.NODE_ENV === 'local_production') {
-//webpack_config.plugins.push(
-//  new BundleAnalyzerrPlugin(
-//    {
-//      analyzerMode: 'server',
-//      analyzerHost: '127.0.0.1',
-//      analyzerPort: 8889,
-//      reportFilename: 'report.html',
-//      defaultSizes: 'parsed',
-//      openAnalyzer: true,
-//      generateStatsFile: false,
-//      statsFilename: 'stats.json',
-//      statsOptions: null,
-//      logLevel: 'info'
-//    }
-//  )
-//);
-//}
+
 
 
 module.exports = {
@@ -49,21 +30,11 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
       /* 新增mui*/
-//    'src': path.resolve(__dirname, '../static'),,  
-//    // 2. 定义别名和插件位置  
-//    'mui': path.resolve(__dirname, '../static/utils/js/mui.js')  
+//    'src': path.resolve(__dirname, '../static'),,
+//    // 2. 定义别名和插件位置
+//    'mui': path.resolve(__dirname, '../static/utils/js/mui.js')
     }
-    /* 新增mui*/
-//  plugins: [  
-//  new webpack.ProvidePlugin({  
-//      mui: "mui",  
-//      "window.mui": "mui"  
-//  })  
-//]
   },
-//externals:{
-//  'BMap': 'BMap'
-//},
   module: {
     rules: [
       {
@@ -74,10 +45,10 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')],
-		query: {
-			presets: ['es2015']
-		}
+        query: {
+            presets: ['es2015']
+        },
+        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -106,22 +77,20 @@ module.exports = {
     ]
   },
   node: {
-    // prevent webpack from injecting useless setImmediate polyfill because Vue
-    // source contains it (although only uses it if it's native).
     setImmediate: false,
-    // prevent webpack from injecting mocks to Node native modules
-    // that does not make sense for the client
     dgram: 'empty',
     fs: 'empty',
     net: 'empty',
     tls: 'empty',
     child_process: 'empty'
   },
-//plugins: [
-//		new webpack.ProvidePlugin({
-//		jQuery: "jquery",
-//		$: "jquery",
-//		'window.jQuery': "jquery"
-//		})
-//	],  
+  plugins: [
+      /* 新增jq*/
+      new webpack.ProvidePlugin({
+  　　　　$:"jquery",
+  　　　　jQuery:"jquery",
+  　　　　"window.jQuery":"jquery"
+      }),
+      new BundleAnalyzerPlugin()
+    ],
 }

@@ -9,7 +9,6 @@
 								<div class="van-image van-uploader__preview-image">
 									<img :src="item" style="object-fit: cover;">
 								</div>
-								<!--<i class="van-icon van-icon-delete van-uploader__preview-delete"></i>-->
 							</div>
 						</div>
 						<van-image-preview 

@@ -50,7 +50,6 @@
 						 		在广州黄埔区上班
 						 	</span>
 				</div>
-				<!--<div class="margin"></div>-->
 			</div>
 			<!--列表-->
 			<div class="margin-t">
@@ -101,6 +100,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

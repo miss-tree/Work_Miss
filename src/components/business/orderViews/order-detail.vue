@@ -71,9 +71,7 @@
 			<div class="form_div bottom_boder">
 				<div class="padding-lr padding_bb" style="padding-top: 8px;">
 					<div class="detail_bz">{{INFOR.bz}}</div>
-					<!--<textarea class="textarea" readonly="readonly" cols="38" v-model="INFOR.bz"></textarea>-->
 				</div>
-				<!--<div class="bottomOver"></div>-->
 			</div>
 		</div>
 	</div>
@@ -81,13 +79,6 @@
 
 <script>
 	export default {
-		data() {
-			return {}
-		},
 		props: ["INFOR"],
 	}
 </script>
-
-<style>
-
-</style>

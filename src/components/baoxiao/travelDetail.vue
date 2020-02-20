@@ -158,22 +158,6 @@
             <div class="detail_bz">{{bz}}</div>
           </div>
         </div>
-        <!--<div class="mui-card">
-					<form class="mui-input-group">
-						<div class="mui-input-row mui-radio">
-							<label class="span_green">同意</label>
-							<input name="radio1" type="radio">
-						</div>
-						<div class="mui-input-row mui-radio">
-							<label  class="span_red">驳回</label>
-							<input name="radio1" type="radio">
-						</div>
-					</form>
-				</div>
-	    		<div style="text-align: center;margin-top: 15px; margin-bottom: 15px;">
-	    			<button type="button" style="width: 80%; padding: 10px;" id="update"
-	    				class="mui-btn update mui-btn-block mui-btn-primary">提交</button>
-        </div>-->
         <!--审核进度-->
         <div class="form_title">审核进度</div>
         <div class="time_line_div" style="margin-bottom: 30px;">
@@ -203,7 +187,6 @@
 </template>
 
 <script>
-//	import {selectTime,progress,refresh} from '../../../static/utils/public.js'
 export default {
   data() {
     return {
@@ -308,6 +291,3 @@ export default {
   }
 };
 </script>
-
-<style>
-</style>

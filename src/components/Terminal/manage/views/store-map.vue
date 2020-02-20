@@ -19,16 +19,8 @@
 
 <script>
 	export default {
-		data() {
-			return {
-			}
-		},
 		props:["IPINFOR"],
 		methods: {
 		}
 	}
 </script>
-
-<style>
-
-</style>

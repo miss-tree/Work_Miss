@@ -9,9 +9,6 @@
 	    <!--内容部分-->
 	    <div class="mui-content">
 	    	<div class="formTable">
-	    		<!--<div class="form_title">
-	    			客户信息
-	    		</div>-->
 	    		<div class="form_div">
 	    			<div class="form_row">
 		    			<label class="form_row_left huise"  id="xm">
@@ -159,7 +156,6 @@
 		        	<uploadpic></uploadpic>
 	        	</div>
 	        	<div class="bottomOver"></div>
-	        	<!--图片上传结束-->
 				<!--备注结束-->
 	    		<div class="submitBtn">
 	    			<button type="button" style="width: 80%; padding: 10px;" id="update"  @click="mustFull"
@@ -237,6 +233,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

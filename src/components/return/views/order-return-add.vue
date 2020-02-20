@@ -10,15 +10,12 @@
           </label>
           <div class="form_row_right">
             <div class="mui-btn mui-btn-primary" @click="returnAdd()">
-              <!--<span class="mui-icon mui-icon-plus"></span>-->
               添加
             </div>
             <button type="button" class="mui-btn" @click="delReturn()">
-              <!--<span class="mui-icon mui-icon-minus"></span>-->
               删除
             </button>
             <span class="mui-btn mui-btn-success" @click="changeReturn()">
-              <!--<span class="mui-icon mui-icon-more"></span>-->
               编辑
             </span>
           </div>
@@ -136,7 +133,6 @@
                     <div
                       class="form_row_right"
                     >{{editReturn.money=editReturn.returnNum*editReturn.price}}</div>
-                    <!--<input type="text" class="form_row_right" placeholder="请输入" v-model="MONEY=num*PRICE"/>-->
                   </div>
                   <div class="form_row">
                     <label class="form_row_left huise" for>
@@ -275,9 +271,9 @@ export default {
         mui.confirm("你确定要删除订单", "提示", ["取消", "确定 "], e => {
           if (e.index == 1) {
           	that.list=that.list.filter((el,index)=>{
-								return that.checkData.includes(el.name)==false
-							})
-							that.checkData=[]
+				return that.checkData.includes(el.name)==false
+			})
+			that.checkData=[]
           }
         });
       }
@@ -361,18 +357,15 @@ export default {
             }
           });
           if(isHave==false){//没有就添加
-								this.list.push(this.editReturn)
-								this.editReturn = {name: "",num: "",returnNum: "",price: "",money: "", m_number: "",m_money: "", unit: "",index: ""},
-              	this.selectPro = "";
-								this.topLayer = false;
-              	this.returnShow = false;
-						}
+            this.list.push(this.editReturn)
+            this.editReturn = {name: "",num: "",returnNum: "",price: "",money: "", m_number: "",m_money: "", unit: "",index: ""},
+            this.selectPro = "";
+            this.topLayer = false;
+            this.returnShow = false;
+          }
         }
       }
     }
   }
 };
 </script>
-
-<style>
-</style>

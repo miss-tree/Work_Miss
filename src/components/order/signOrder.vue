@@ -210,8 +210,6 @@
 </template>
 
 <script>
-	import "../../../static/utils/selectFilter.js"; /*下拉选择框*/
-	import "../../../static/css/selectFilter.css";
 	import {
 	  selectTime,
 	  PopPicker,

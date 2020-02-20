@@ -10,17 +10,8 @@
     <div class="mui-content" id="toTop">
     	<!--回到顶部-->
     	<get-top></get-top>
-    	<!--<div class="toTop" v-show="scrollTop>=100" @click="getToTop">
-    		<span class="iconfont icon-huidaodingbu"></span>
-    	</div>-->
     	<!--加载组件-->
     	<loading v-show="dataOver==false"></loading>
-    	<!--<div class="mongolia"></div>
-    	<div class="loading" v-show="dataOver==false">
-    		<div class="loadingAlert">
-    		 	<img src="../../../static/assets/loading.gif"/>
-    		</div>
-    	</div>-->
     	<!--申请详情-->
       <div class="formTable"><!-- v-show="dataOver"-->
       	<div>
@@ -163,14 +154,9 @@
 </template>
 
 <script>
-import "../../../static/utils/selectFilter.js"; /*自定义下拉框*/
-import "../../../static/css/selectFilter.css";
-import getTop from "../assembly/getTop.vue"; /*回到顶部*/
-import loading from "../assembly/loading.vue"; /*加载弹窗*/
 import orderdetail from "./views/order-list-detail.vue"; /*退货订单详情*/
 import countadd from "./views/order-discount.vue"; /*折扣添加*/
 import countdetail from "./views/apply-detail.vue"; /*折扣添加*/
-import timeLine from "../assembly/timeLine.vue"; /*流程进度*/
 export default {
   data() {
     return {
@@ -224,9 +210,7 @@ export default {
 				{progress:'提交申请',opinion:'',bz:'',time:'2018-04-01 20:42'}],
     };
   },
-  components: {
-    getTop,countadd,loading,orderdetail,countdetail,timeLine
-  },
+  components: {countadd,orderdetail,countdetail  },
   computed: {
     tatol() {//订单金额
       if (this.ORDER.length == 0) {
@@ -276,12 +260,7 @@ export default {
     },
     getScrollTop(){//获取滚动高度
       this.scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      //console.log(this.scrollTop)
     }
   }
 };
 </script>
-
-<style lang="scss">
-	
-</style>

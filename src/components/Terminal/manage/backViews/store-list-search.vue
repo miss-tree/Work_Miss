@@ -131,7 +131,6 @@
 			selectTime();
 			this.checkWhere= OTCData.map(row=>({text:row.text}))
     		selecTion("part", this.checkWhere);
-//  		selecTion("compony", this.comArr);
 		},
 		methods:{
 			closeAlert(){//点击关闭
@@ -177,6 +176,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

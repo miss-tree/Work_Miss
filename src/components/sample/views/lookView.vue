@@ -26,17 +26,14 @@
 					<ul  @click="getSelectVal">
 						<li :class="{active:startVal=='产品名称'}"
 							style="border: 0;">
-							<!--@click="startVal='产品名称'"--> 
 								产品名称
 						</li>
 						<li :class="{active:startVal=='规格'}"
 							>
-							<!--@click="startVal='规格'"--> 
 								规格
 						</li>
 						<li :class="{active:startVal=='归属公司'}" 
 							>
-							<!--@click="startVal='归属公司'"-->
 							归属公司
 						</li>
 					</ul>
@@ -67,16 +64,13 @@
 		},
 		watch:{
 			tl(newVal,oldVal){
-				//if(newVal){
 					this.$emit("searchVal", newVal)
-				//}
 			}
 		},
 		methods: {
 			getSelectVal(e){
 				this.startVal=e.target.innerText
 				this.select1=false
-//				console.log(e.target.innerText)
 			},
 			changeOne(){
 				this.select1=!this.select1;
@@ -152,6 +146,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

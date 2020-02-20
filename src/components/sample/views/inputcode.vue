@@ -40,14 +40,6 @@
 				}
 			}
 		},
-		watch:{
-//			tl(newVal,oldVal){
-				//if(newVal){
-//					this.value.tl=newVal
-//					this.$emit("searchVal",this.value )
-				//}
-//			}
-		},
 		methods: {
 			setChange(){
 				this.value.cancel=true,
@@ -119,6 +111,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

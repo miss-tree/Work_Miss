@@ -35,9 +35,7 @@
 		},
 		watch:{
 			tl(newVal,oldVal){
-				//if(newVal){
 					this.$emit("searchVal", newVal)
-				//}
 			}
 		},
 		methods: {
@@ -63,18 +61,6 @@
 					window.open('https://www.baidu.com/s?wd=' + this.tl);
 					this.tl = '';
 				}
-				//调用访问百度接口数据
-				/*    this.$http.jsonp('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su',{
-				        wd:this.tl
-				    },{
-				        jsonp:'cb'
-				    }).then(function(res){
-				        this.myData = res.data.s;
-				    },function(res){
-
-				    });
-				    * 当有接口用上面方法
-				    * */
 				/*下面是自定义给的数据*/
 				this.myData = ['蔡含双', '孙秀婉', '邱清昶',
 					'厚琇莹', '谬田田', '藏雪珍', '甲祺'

@@ -2,7 +2,6 @@
 	<div>
 		<!--头部-->
 		<header class="mui-bar mui-bar-nav back_title">
-			<!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
 			<h1 class="mui-title"><!--<img src="../assets/logo.png" class="logo"/>-->消息</h1>
 		</header>
 		<!--选项卡-->
@@ -25,13 +24,10 @@
 			</router-link>
 		</nav>
 		<!--选项卡结束-->
-		<!--内容-->
 		
 	</div>
 </template>
 
-<script>
-</script>
 
 <style>
 .mui-bar .mui-icon{

@@ -11,7 +11,6 @@
 			<div class="tableSearch">
 				<div style="width: 70%;">
 					<input type="text" name="" id="search" value="" placeholder="请输入申请人姓名"/>
-					<!--<i class="iconfont icon-sousuo3"></i>-->
 				</div>
 				<div class="searchBtn">
 						搜索
@@ -37,7 +36,6 @@
 
 <script>
 	import {selectTime,getTime,getDate} from '../../../static/utils/public.js'
-	import pages from "../assembly/pagination.vue"/*分页*/
 	import list from "./views/my-leave-List.vue"/*列表*/
 	import search from "./views/leave-list-search.vue";/*搜索*/
 	export default{
@@ -53,11 +51,8 @@
 			}
 		},
 		components:{
-			pages,
 			list,
 			search
-		},
-		computed:{
 		},
 		mounted(){
 			this.$data.sureTime = getTime()
@@ -75,6 +70,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

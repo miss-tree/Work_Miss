@@ -42,7 +42,6 @@
 </template>
 
 <script> 
-	import getTop from "../assembly/getTop.vue"; /*回到顶部*/
 	import storeMsg from "./reViews/money-detail.vue"
 	import proName from "./reViews/--pro-detail.vue"
 	import record from "./reViews/history-detail.vue"
@@ -70,28 +69,22 @@
 				],
 			}
 		},
-		components:{getTop,storeMsg,proName,record},
-		mounted(){
-//			window.addEventListener('scroll', this.onScroll);
-		},	
+		components:{storeMsg,proName,record},
 		methods:{
 			 onScroll() {
-                    //可滚动容器的高度
-                    let innerHeight = document.querySelector('#test').clientHeight;
-                    //屏幕尺寸高度
-                    let outerHeight = document.documentElement.clientHeight;
-                    //可滚动容器超出当前窗口显示范围的高度
-                    let scrollTop = document.documentElement.scrollTop;
-                    //scrollTop在页面为滚动时为0，开始滚动后，慢慢增加，滚动到页面底部时，出现innerHeight < (outerHeight + scrollTop)的情况，严格来讲，是接近底部。
-                    console.log(innerHeight + " " + outerHeight + " " + scrollTop);
-                    if (innerHeight < (outerHeight + scrollTop)) {
-                        //加载更多操作
-                        console.log("loadmore");
-                    }
+        //可滚动容器的高度
+        let innerHeight = document.querySelector('#test').clientHeight;
+        //屏幕尺寸高度
+        let outerHeight = document.documentElement.clientHeight;
+        //可滚动容器超出当前窗口显示范围的高度
+        let scrollTop = document.documentElement.scrollTop;
+        //scrollTop在页面为滚动时为0，开始滚动后，慢慢增加，滚动到页面底部时，出现innerHeight < (outerHeight + scrollTop)的情况，严格来讲，是接近底部。
+        console.log(innerHeight + " " + outerHeight + " " + scrollTop);
+        if (innerHeight < (outerHeight + scrollTop)) {
+            //加载更多操作
+            console.log("loadmore");
+        }
 			}
 		}	 
 	}
 </script>
-
-<style>
-</style>

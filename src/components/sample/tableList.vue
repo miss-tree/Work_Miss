@@ -9,7 +9,6 @@
 			<div class="tableSearch">
 				<div style="width: 70%;">
 					<input type="text" name="" id="search" value="" placeholder="请输入关键字"/>
-					<!--<i class="iconfont icon-sousuo3"></i>-->
 				</div>
 				<div class="searchBtn">
 						搜索
@@ -37,7 +36,6 @@
 										666 感谢楼主不错的分享 666 感谢楼主不错的分享 666 感谢楼主不错的分享
 									</div>
 								</div>
-								<!--<i class="iconfont icon-tuandui"></i>团队协作-->
 							</div>
 						</router-link>
 					</li>
@@ -76,7 +74,6 @@
 										666 感谢楼主不错的分享666 感谢楼主不错的分享 666 感谢楼主不错的分享
 									</div>
 								</div>
-								<!--<i class="iconfont icon-tuandui"></i>团队协作-->
 							</div>
 						</router-link>
 					</li>
@@ -164,12 +161,10 @@
 				<div class="margin-t">
 					<div class="margin-lr  backg">
 						<div class="look">
-							<!--<router-link to="/moneyDetail">-->
 							<a href="#">
 								<span class="mui-icon mui-icon-eye"></span>
 								<span>点击查看详情</span>
 							</a>
-							<!--</router-link>-->
 						</div>
 						<div class="hang" style="text-align: center;">
 							<span class="margin-lr" style="display: inline-block;">

@@ -8,14 +8,6 @@
 	    <!--头部结束-->
 	    <div class="mui-content">
 	    	<div class="screen">
-		    	<!--<div class="screen_tab" style="width: 35%;">
-		    		<div @click="changeOne" class="nowrap">
-		    			{{startVal}}
-		    			<span class="mui-icon span_13px" 
-		    				:class="select1?'mui-icon-arrowdown':'mui-icon-arrowup'" 
-		    				></span>
-		    		</div>
-		    	</div>-->
 		    	<div class="screen_tab" style="width: 75%;">
 		    		<div @click="changeTwo" class="nowrap"> 
 		    			{{modelVal}}
@@ -30,11 +22,6 @@
 		    			<i class="iconfont icon-fenxiaosousuo" style="font-size: 20px;"></i>
 		    		</div>
 		    	</div>
-		    	<!--<div class="screen_tab">
-		    		<div @click="changeFour">
-		    			<i class="iconfont icon-sousuo3 span_13px"></i>
-		    		</div>
-		    	</div>-->
 	    	</div>
 	    	<!--选择弹出-->
 	    	<div>
@@ -75,7 +62,6 @@
 				<list :ORDERLIST="ORDER" @getCheck="getCheckInfor"></list>
 				<div class="mui-bar-tab mui-bar" style="height: 40px;padding: 0 15px;">
 					<div class="bottomWidth flex justify_content">
-						<!--<span class="span_15px">数量：{{ORDER.length}}</span>-->
 						<span class="span_15px" style="margin-left: 5px;">退货金额：{{MONEY.toFixed(2)}}元</span>
 					</div>
 				</div>

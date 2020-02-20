@@ -121,7 +121,6 @@
                   <div
                     class="form_row_right"
                   >{{editReturn.money=editReturn.returnNum*editReturn.price}}</div>
-                  <!--<input type="text" class="form_row_right" placeholder="请输入" v-model="MONEY=NUMBER*PRICE"/>-->
                 </div>
               </div>
             </div>
@@ -147,8 +146,6 @@
 
 <script>
 	import "../../../../static/css/alert.css"
-import "../../../../static/utils/selectFilter.js"; /*自定义下拉框*/
-import "../../../../static/css/selectFilter.css";
 export default {
   data() {
     return {
@@ -362,6 +359,3 @@ export default {
   }
 };
 </script>
-
-<style>
-</style>

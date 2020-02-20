@@ -150,7 +150,6 @@
 <script>
 import listdetail from "./views/order-list-detail.vue"; /*订单详情*/
 import addreturn from "./views/order-list-add-return.vue"; /*添加退货*/
-import timeLine from "../assembly/timeLine.vue"; /*流程进度*/
 export default {
   data() {
     return {
@@ -185,7 +184,7 @@ export default {
     };
   },
   components: {
-    listdetail,timeLine,addreturn
+    listdetail,addreturn
   },
   watch: {
     ISRETURN(newVal, oldVal) {
@@ -213,7 +212,3 @@ export default {
   }
 };
 </script>
-
-<style>
-
-</style>

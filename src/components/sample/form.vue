@@ -7,7 +7,6 @@
 	    </header>
 	    <!--头部结束-->
 	    <div class="mui-content">
-	    	<!--<extend-code v-bind="provinceList1" @collect="collectProvince1"></extend-code>-->
 	    	<div class="formTable">
 	    		<div class="form_title">
 	    			标题
@@ -36,41 +35,6 @@
 	    		<!--出差整个行程-->
 	    		<div v-for="(item,index) in Travel">
 	    		<div class="form_div">
-		    		<!--<div class="form_row">
-		    			<label class="form_row_left" for="">
-		    				交通工具单选
-		    				<span class="span_red"></span>
-		    			</label>
-		    			<div class="form_row_right">
-		    				<label ><input type="radio" name="travel" value="飞机" v-model="travel"/>
-		    				<button type="button" class="row_button">飞机</button>
-		    				</label>
-		    				<label ><input type="radio" name="travel" value="火车" v-model="travel" />
-		    				<button type="button" class="row_button">火车</button>
-		    				</label>
-		    				<label ><input type="radio" name="travel" value="汽车" v-model="travel" />
-		    				<button type="button" class="row_button">汽车</button>
-		    				</label>
-		    				<label ><input type="radio" name="travel" value="其他" v-model="travel" />
-		    				<button type="button" class="row_button">其他</button>
-		    				</label>
-		    			</div>
-		    		</div>-->
-		    		<!--<div class="form_row">
-		    			<label class="form_row_left" for="">
-		    				switch开关
-		    				<span class="span_red"></span>
-		    			</label>
-		    			<div class="form_row_right">
-		    				<div class="testswitch">
-								<input class="testswitch-checkbox" id="onoffswitch" type="checkbox" v-model="Switch">
-								<label class="testswitch-label" for="onoffswitch">
-									<span class="testswitch-inner" data-on="ON" data-off="OFF"></span>
-									<span class="testswitch-switch"></span>
-								</label>
-							</div>
-		    			</div>
-		    		</div>-->
 		    		<div class="form_row">
 		    			<label class="form_row_left huise" for="">
 		    				一级选择
@@ -209,7 +173,6 @@
 			}
 		},
 		mounted(){
-			/*var that=this*/
 			selectTime();
 			PopPicker("showCityPicker3");
 			this.getTime();

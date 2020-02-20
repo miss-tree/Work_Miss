@@ -24,7 +24,7 @@
 		    			</label>
 						<div class="filter-box form_row_right" id="orderClient">
 							<div class="filter-text">
-								<input class="filter-title" type="text" data="required" 
+								<input class="filter-title" type="text" data="required"
 									name="type" readonly placeholder="请选择" />
 								<i class="icon icon-filter-arrow"></i>
 							</div>
@@ -43,12 +43,12 @@
 		    				事业部
 		    				<span class="span_red">*</span>
 		    			</label>
-						<input type="text" class="form_row_right" data="required" 
-							name="PART1" @click="showPART1 = true" readonly="readonly" 
+						<input type="text" class="form_row_right" data="required"
+							name="PART1" @click="showPART1 = true" readonly="readonly"
 							v-model="PARTONE" placeholder="请选择" />
 						<van-popup v-model="showPART1" position="bottom">
-							<van-picker show-toolbar title="事业部" 
-								:columns="partArr" @cancel="showPART1 = false" 
+							<van-picker show-toolbar title="事业部"
+								:columns="partArr" @cancel="showPART1 = false"
 								@confirm="getPart1" />
 						</van-popup>
 					</div>
@@ -57,7 +57,7 @@
 			             	 借款金额
 			              <span class="span_red">*</span>
 			            </label>
-						<input type="text" class="form_row_right" autocomplete="off" 
+						<input type="text" class="form_row_right" autocomplete="off"
 							data="required" name="job" v-model="MONEY" placeholder="请输入">
 					</div>
 					<div class="form_row">
@@ -93,7 +93,7 @@
 				</div>
 				<!--备注结束-->
 				<div class="submitBtn">
-					<button type="button" style="width: 80%; padding: 10px;" id="update" @click="mustFull" 
+					<button type="button" style="width: 80%; padding: 10px;" id="update" @click="mustFull"
 						class="mui-btn update mui-btn-block mui-btn-primary">提交</button>
 				</div>
 			</div>
@@ -141,30 +141,20 @@
 				/*设置相隔的月份 */
 				var tt = dayjs().month(now.getMonth() + 3)
 				console.log(tt)
-				/*var jj= new Date("2019-12-06");
-				var ss = dayjs().month(jj.getMonth() + 3)
-				console.log(ss)
-				var yy = ss.year().toString()
-				var mm = ss.month().toString()
-				var dd = ss.date().toString()
-				console.log(yy + "-" + mm + "-" + dd)*/
 				var y = tt.year().toString()
 				var m = tt.month().toString()
 				var d = tt.date().toString()
 				console.log(y + "-" + m + "-" + d)
-				if(m="0"){//当到12时会变为0
-					m="12"
-				}
 				var last = y + "-" + m + "-" + d /*将dayjs()对象转为字符串*/
 				/*获取两个月后前一天的时间戳*/
 				console.log(last)
-				console.log((new Date("2019-10-11").getTime())- 24 * 60 * 60 * 1000)
+				console.log((new Date().getTime())- 24 * 60 * 60 * 1000)
 				var fultrue = (new Date(""+last)).getTime() - 24 * 60 * 60 * 1000;
 				console.log(fultrue)
 				var fultrue = new Date(fultrue)
-				//fultrue = `${fultrue.getFullYear()}-${fultrue.getMonth() + 1}-${fultrue.getDate()}`
 				fultrue =`${fultrue.getFullYear()}-${padNumber(fultrue.getMonth()+1,2)}-${padNumber(fultrue.getDate(),2)}`
-				return fultrue
+				console.log(fultrue)
+        return fultrue
 			},
 			applyAjax() { //请求客户数据
 				axios.get().then()

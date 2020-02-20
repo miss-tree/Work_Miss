@@ -42,7 +42,6 @@
 </template>
 
 <script>
-//	import formTable from "../sample/formTable.vue"
 	export default {
 	data() {
 		return {

@@ -10,11 +10,6 @@
 			<div id="tabbar" class="mui-control-content mui-active">
 				<div>
 					<ul class="mui-table-view">
-						<!--<li class="mui-table-view-cell">
-							<router-link class="mui-navigate-right" to='/formTable'>
-								<i class="iconfont icon-xinshenqing"></i>分页
-							</router-link>
-						</li>-->
 						<li class="mui-table-view-cell">
 							<router-link class="mui-navigate-right" to='/picker'>
 								<i class="iconfont icon-xinshenqing"></i>选择器

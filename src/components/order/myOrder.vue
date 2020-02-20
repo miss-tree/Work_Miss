@@ -12,7 +12,6 @@
 					<li class="mui-table-view-cell">
 						<router-link class="mui-navigate-right" to="/orderAdd">
 							<i class="iconfont icon-shuru"></i>订单申请
-							<!--<router-view></router-view>-->
 						</router-link>
 					</li>
 					<li class="mui-table-view-cell">
@@ -30,9 +29,3 @@
 		</div>
 	</div>
 </template>
-
-<script>
-</script>
-
-<style>
-</style>

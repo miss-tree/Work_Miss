@@ -49,21 +49,6 @@
 								{{ORDERCUSTOMERINFOR.ticketDate}}
 							</div>
 					</div>	
-					<!--<div class="form_row">
-						<label class="form_row_left huise" id="CLIENT">
-		    				退货类型
-		    				<span class="span_red">*</span>
-		    			</label>
-						<div class="filter-box form_row_right" id="RETURNTYPE">
-							<div class="filter-text">
-								<input class="filter-title" type="text" readonly placeholder="请选择" />
-								<i class="icon icon-filter-arrow"></i>
-							</div>
-							<select name="filter" v-for="(item,index) in clientName">
-								<option>{{item.text}}</option>
-							</select>
-						</div>
-					</div>-->
 					<div class="form_row">
 						<label class="form_row_left huise" id="CLIENT">
 		    				部门
@@ -177,8 +162,6 @@
 </template>
 
 <script>
-	import '../../../static/utils/selectFilter.js' /*自定义下拉框*/
-	import '../../../static/css/selectFilter.css'
 	import listdeatail from "./order-list-deatail.vue"/*订单详情*/
 	import addreturn from "./order-list-add-return.vue"/*添加退货*/
 	import {  mustFill } from '../../../static/utils/public.js'
@@ -236,23 +219,6 @@
 					this.curIndex=0
 				}
 			},
-//			selectPro(newVal,oldVal){//监听退货选择的产品
-//				if(newVal==''){
-//					return
-//				}else if(this.isEditReturn==true){
-//					if(newVal!=oldVal){
-//						console.log("值改变了")
-//					}
-//				}else{
-//					this.ORDER.forEach((el,index)=>{
-//						if(el.NAME==this.editReturn.name){
-//							this.editReturn.unit=this.ORDER[index].UNIT
-//							this.editReturn.price=this.ORDER[index].PRICE
-//							this.editReturn.num=this.ORDER[index].NUMBER
-//						}
-//					})
-//				}
-//			},
 			checkData(){//监看点击选项
 				if(this.checkData.length==this.RETURNORDER.length){
 					this.allCheck=true;
@@ -267,24 +233,6 @@
 			proList(){//获取订单上的产品名称
 				return this.ORDER.map(row=>({text:row.NAME}))
 			},
-//			total() {//订单金额
-//				if(this.ORDER.length == 0) {
-//					return 0
-//				} else {
-//					return this.ORDER.map(row => row.MONEY).reduce((acc, cur) => {
-//						return parseFloat(cur) + acc
-//					})
-//				}
-//			},
-//			returnTotal() {//退货金额
-//				if(this.RETURNORDER.length == 0) {
-//					return 0
-//				} else {
-//					return this.RETURNORDER.map(row => row.money).reduce((acc, cur) => {
-//						return parseFloat(cur) + acc
-//					})
-//				}
-//			}
 		},
 		mounted() {
 			var that = this
@@ -320,113 +268,13 @@
 				})
 			},
 			
-//			lookGoods(index) { //查看订单详情
-//				this.editOrder = this.ORDER[index]
-//				this.editOrder.index = index
-//				this.topLayer = true
-//				this.alertShow = true
-//			},
-//			closeOrder(){//关闭订单详情
-//				this.topLayer = false
-//				this.alertShow = false
-//			}, 
-			
-//			saveReturn() { //退货编辑后保存
-//				var curIndex = this.editReturn.index
-//				this.RETURNORDER[curIndex] = this.editReturn
-//				this.editReturn = {name:'',num:'',returnNum:'',price:'',money:'',m_number:'',m_money:'',unit:'',index:''},
-//				this.topLayer = false
-//				this.returnShow = false
-//				this.isEditReturn=false
-//			},
-//			returnAdd() { //弹出退货添加弹窗
-//				this.topLayer = !this.topLayer
-//				this.returnShow = !this.returnShow
-//				this.editReturn ={name:'',num:'',returnNum:'',price:'',money:'',m_number:'',m_money:'',unit:'',index:''};
-//			},
-			
-//			delReturn(){//删除
-//				if(this.checkData.length==0){
-//					return false
-//				}else{
-//					mui.confirm('你确定要删除订单','提示',['取消','确定 '],(e)=>{
-//						if(e.index==1){
-//							this.RETURNORDER.forEach((el,index)=>{
-//								if(this.checkData.indexOf(el.name)!=-1){
-//									this.RETURNORDER.splice(index,1)
-//								}
-//							})
-//						}
-//					})
-//				}
-//			},
 			closeAlert() { //关闭蒙层
 				this.topLayer = false;
 				this.alertShow = false;//关闭详情弹窗
 				this.returnShow = false;//关闭退货弹窗
 			},
 			
-//			checkAll() { // 点击全选事件
-//				this.allCheck = !this.allCheck
-//				if(this.allCheck = false) {//之前全选则清空
-//					this.checkData = [];
-//					return false
-//				} else { //之前不全选则现在全选
-//					this.checkData = [];
-//					this.RETURNORDER.forEach((el, index) => {
-//						this.checkData.push(el.NAME);
-//					});
-//					return false
-//				}
-//			},
-//			changeReturn(){//退货编辑弹窗
-//				if(this.checkData.length==0){
-//					return false
-//				}else{
-//					this.isEditReturn=true
-//					this.RETURNORDER.forEach((el,index)=>{
-//						if(el.name.indexOf(this.checkData[0])!=-1){
-//							this.editReturn=this.RETURNORDER[index]
-//							this.editReturn.index=index
-//							this.selectPro=this.editReturn.name
-//						}
-//					})
-//					this.topLayer=true
-//					this.returnShow=true
-//				}
-//			},
-//			keepReturn(){//添加退货产品
-//				if(this.editReturn.name==''){
-//					mui.alert('请选择产品名称')
-//					return false
-//				}else if(this.editReturn.returnNum==''){
-//					mui.alert('请输入退货数量')
-//					return false
-//				}else{
-//					if(this.RETURNORDER.length==0){
-//						this.RETURNORDER.push(this.editReturn)
-//						this.selectPro=''
-//						this.topLayer = false
-//						this.returnShow = false
-//					}else{
-//						this.RETURNORDER.forEach((el,index)=>{
-//							console.log('hi')
-//							if(el.name==this.editReturn.name){//确保没有重复
-//								mui.alert("此产品已经退货，请重新选择")
-//								return false
-//							}else{
-//								this.RETURNORDER.push(this.editReturn)
-//								this.selectPro=''
-//								this.editReturn = {name:'',num:'',returnNum:'',price:'',money:'',m_number:'',m_money:'',unit:'',index:''},
-//								this.topLayer = false
-//								this.returnShow = false
-//							}
-//						})
-//					}
-//				}
-//			},
 			mustFull() {//必填项
-				//mustFill()
 				var isOk = mustFill();
 				if(isOk.length == 0) {
 					console.log('hi')
@@ -435,6 +283,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

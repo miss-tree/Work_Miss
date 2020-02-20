@@ -55,9 +55,6 @@ data() {
     	{isCheck:'true',id:7854532,title:"今天天气怎样",type:"weather"}]
     };
 },
-//// components:{
-  // 	gongneng
-  // },
     mounted(){
        		mui.init();
 			(function($) {
@@ -104,10 +101,5 @@ data() {
 				});
 			})(mui); 
        },
-//methods: {
-//};
 }
 </script>
-
-<style>
-</style>

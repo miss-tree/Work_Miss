@@ -2,30 +2,14 @@
   <div>
     <div>
       <div class="form_div">
-        <!--<div class="form_row">
-          <label class="form_row_left huise" for>
-            折扣列表
-            <span class="span_red"></span>
-          </label>
-          <div class="form_row_right">
-          </div>
-        </div>-->
         <!--产品订单列表-->
         <table border="0" cellspacing cellpadding class="dataTable">
           <tr>
-            <!--<th class="col_10">
-              <label class="bui-checkbox-label bui-checkbox-anim">
-              </label>
-            </th>-->
             <th class="col_20">项目编号</th>
             <th class="col_40">项目名称</th>
             <th class="col_15">折扣总金额</th>
           </tr>
           <tr v-for="(item,index) in DISCOUNTINFOR.arr">
-            <!--<td class="col_10">
-              <label class="bui-checkbox-label bui-checkbox-anim">
-              </label>
-            </td>-->
             <td class="col_20" style="padding-left: 15px;">
               <span>{{item.num}}</span>
             </td>
@@ -54,15 +38,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-    };
-  },
   props: ['DISCOUNTINFOR'],
-  methods: {
-  }
 };
 </script>
-
-<style>
-</style>

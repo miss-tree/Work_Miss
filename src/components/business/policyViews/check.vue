@@ -13,18 +13,6 @@
 		<div style="display: flex;width: 100%;height: calc(100vh - 44px);top: 44px;">
 			<!--左边-->
 			<div style="width: 30%;background-color: #efeff4;border-right: 1px solid #ddd;">
-				<!--<div class="screen_table_left_div"
-					:class="{active:curIndex==0,line_30px:dateCheck==''}"
-					@click="curIndex=0">
-					<div>收款方式</div>
-					<div >{{dateCheck}}</div>
-				</div>-->
-				<!--<div class="screen_table_left_div"
-					:class="{active:curIndex==1,line_30px:selectCheck.length==0}"
-					@click="curIndex=1">
-					<div>收款公司</div>
-					<div>{{selectCheck}}</div>
-				</div>-->
 				<div class="screen_table_left_div"
 					:class="{active:curIndex==2,getSearch:setDate!=''}"
 					@click="curIndex=2">	
@@ -35,26 +23,7 @@
 					:class="{active:curIndex==3,getSearch:PRONAME.length!=0}"
 					@click="curIndex=3">	
 					<div>产品选择</div>
-					<!--<div><span v-for="item in PRONAME">{{item}}、</span></div>-->
 				</div>
-				<!--<div class="screen_table_left_div"
-					:class="{active:curIndex==4,line_30px:NATURE.length==0}"
-					@click="curIndex=4">	
-					<div>经营性质</div>
-					<div><span v-for="item in NATURE">{{item}}、</span></div>
-				</div>-->
-				<!--<div class="screen_table_left_div"
-					:class="{active:curIndex==5,line_30px:HANDLE==''}"
-					@click="curIndex=5">	
-					<div>操作方式</div>
-					<div>{{HANDLE}}</div>
-				</div>
-				<div class="screen_table_left_div"
-					:class="{active:curIndex==6,line_30px:PART==''}"
-					@click="curIndex=6">	
-					<div>部门</div>
-					<div>{{PART}}</div>
-				</div>-->
 			</div>
 			<!--左边-->
 			<!--右边-->
@@ -211,9 +180,6 @@
 					  highlight-current
 					  :props="defaultProps">
 					</el-tree>
-					<!--<div style="padding: 10px 15px 10px 10px;font-size: 12px;">
-						<span v-for="item in PRONAME">{{item}}、</span>
-					</div>-->
 					<div class="buttons" style="margin-top: 20px;text-align: center;">
 					  <el-button @click="getCheckedNodes">选择确定</el-button>
 					</div>
@@ -408,18 +374,6 @@ import {selectTime,getTime,getDate,DateAdd,selecTion} from "../../../../static/u
 		          label: 'label'
 		        }
 			}
-		},
-		watch:{
-//			STARTDATE(newVal,oldVal){
-//				if(newVal){
-//					this.setDate=newVal+'至'+this.ENDDATE
-//				}
-//			},
-//			ENDDATE(newVal,oldVal){
-//				if(newVal){
-//					this.setDate=this.ENDDATE+'至'+newVal
-//				}
-//			},
 		},
 		mounted(){
 			selectTime();

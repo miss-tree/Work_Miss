@@ -121,7 +121,3 @@
 		props: ["INFOR"],
 	}
 </script>
-
-<style>
-
-</style>

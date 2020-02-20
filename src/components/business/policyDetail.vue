@@ -20,7 +20,6 @@
 </template>
 
 <script>
-	import getTop from "../assembly/getTop.vue"; /*回到顶部*/
 	import storeMsg from "./policyViews/policy-detail.vue"
 	export default{
 		data(){
@@ -34,7 +33,7 @@
 				{name:"板蓝根颗粒25袋",norms:"每袋装10克",price:4.15,num:600,unit:"包",money:0,ph:"TH65962156",beginTime:"2019-08-27",endTime:"2021-08-26",picNum:0},],
 			}
 		},
-		components:{getTop,storeMsg},
+		components:{storeMsg},
 		computed:{
 			changeVal(){
 				console.log('hi')
@@ -44,6 +43,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>

@@ -85,13 +85,7 @@
 				this.$router.push({path:"/sealDetail",query:{id:item.id}})
 			},
 			setInfor(){//设置组件传递的参数
-//				setTimeout(()=>{
-//					this.$emit("getCheck",this.checkInfor)
-//				},20)
 			}
 		}
 	}
 </script>
-
-<style>
-</style>

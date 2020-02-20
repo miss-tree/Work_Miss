@@ -8,7 +8,6 @@
 		<!--内容-->
 		<div class="mui-content">
 			<div>
-				<!--<div class="form_title">终端信息管理</div>-->
 				<ul class="mui-table-view">
 					<li class="mui-table-view-cell">
 						<router-link class="mui-navigate-right" to="/busyOrder">
@@ -72,6 +71,3 @@
 		}
 	}
 </script>
-
-<style>
-</style>
