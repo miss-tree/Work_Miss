@@ -3,7 +3,7 @@
 		<!--头部-->
 		<header class="mui-bar mui-bar-nav back_title">
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-			<h1 class="mui-title">报销管理</h1>
+			<h1 class="mui-title"><!--<img src="../assets/logo.png" class="logo"/>-->报销管理</h1>
 		</header>
 		<!--内容-->
 		<div class="mui-content">

@@ -160,7 +160,27 @@
         </div>
         <!--审核进度-->
         <div class="form_title">审核进度</div>
-        <time-line :examInfor="examInfor"></time-line>
+        <div class="time_line_div" style="margin-bottom: 30px;">
+          <ul class="timeline_ul">
+            <li class="timeline_li" v-for="(item,index) in examInfor">
+              <div class="line"></div>
+              <div class="line_icon line_icon--large" :class="index==0?'line_icon--primary':''">
+                <i class="timeline_li__icon el-icon-more" v-show="index==0"></i>
+              </div>
+              <div class="line_right">
+                <div class="line_content">
+                  {{item.progress}}
+                  <span class v-show="item.bz!=''">
+                    审核意见：
+                    <span :class="item.opinion=='同意'?'span_green':'span_red'">{{item.opinion}}</span>
+                  </span>
+                  <span class v-show="item.bz!=''">审核备注：{{item.bz}}</span>
+                </div>
+                <div class="timeline_li__timestamp is-bottom">{{item.time}}</div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
