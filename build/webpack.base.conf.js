@@ -86,11 +86,15 @@ module.exports = {
   },
   plugins: [
       /* 新增jq*/
-      new webpack.ProvidePlugin({
-  　　　　$:"jquery",
-  　　　　jQuery:"jquery",
-  　　　　"window.jQuery":"jquery"
-      }),
-      new BundleAnalyzerPlugin()
+  //     new webpack.ProvidePlugin({
+  // 　　　　$:"jquery",
+  // 　　　　jQuery:"jquery",
+  // 　　　　"window.jQuery":"jquery"
+  //     }),
+      new BundleAnalyzerPlugin({
+            analyzerMode: "server",
+            analyzerHost: "127.0.0.1",
+            analyzerPort: 8624, // 运行后的端口号
+        })
     ],
 }

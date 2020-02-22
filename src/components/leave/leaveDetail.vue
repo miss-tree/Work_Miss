@@ -12,7 +12,6 @@
 	    	<get-top></get-top>
 	    	<div class="formTable">
 	    			客户信息
-	    		</div>-->
 	    		<div class="form_div">
 	    			<div class="form_row">
 		    			<label class="form_row_left huise"  id="xm">

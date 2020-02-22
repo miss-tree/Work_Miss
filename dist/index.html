@@ -1,1 +1,48 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><link rel=stylesheet type=text/css href=./static/css/mui.min.css><link rel=stylesheet type=text/css href=./static/css/mui.picker.min.css><link rel=stylesheet type=text/css href=./static/css/icon/iconfont.css><link rel=stylesheet type=text/css href=./static/css/mui.poppicker.css><style type=text/css>* { touch-action: pan-y; }</style><title>hello-mui</title><link href=./static/css/app.f1d6b2233afc1b427b67b0ec372061c5.css rel=stylesheet></head><body><div id=app>loading</div><script src=./static/utils/mui.js type=text/javascript charset=utf-8></script><script src=./static/utils/mui.picker.min.js type=text/javascript charset=utf-8></script><script src=./static/utils/mui.poppicker.js type=text/javascript charset=utf-8></script><script type=text/javascript src=./static/js/manifest.f26f653f448b7f2c3ac6.js></script><script type=text/javascript src=./static/js/vendor.2399cb3ca31d680c3427.js></script><script type=text/javascript src=./static/js/app.7e700d842960573f4c0e.js></script></body></html>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><link rel=stylesheet type=text/css href=./static/css/mui.min.css><link rel=stylesheet type=text/css href=./static/css/mui.picker.min.css><link rel=stylesheet type=text/css href=./static/css/icon/iconfont.css><link rel=stylesheet type=text/css href=./static/css/mui.poppicker.css><style type=text/css>* { touch-action: pan-y; }
+      .fixedcenter{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+      }
+      .mid{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;/*内容垂直居中*/
+        justify-content: center;/*内容水平居中*/
+      }
+      #preloader_1{
+        position:relative;
+      }
+      #preloader_1 span{
+        display:block;
+        bottom:0px;
+        width: 9px;
+        height: 5px;
+        background:#9b59b6;
+        position:absolute;
+        animation: preloader_1 1.5s	 infinite ease-in-out;
+
+      }
+      #preloader_1 span:nth-child(2){
+        left:11px;
+        animation-delay: .2s;
+      }
+      #preloader_1 span:nth-child(3){
+        left:22px;
+        animation-delay: .4s;
+      }
+      #preloader_1 span:nth-child(4){
+        left:33px;
+        animation-delay: .6s;
+      }
+      #preloader_1 span:nth-child(5){
+        left:44px;
+        animation-delay: .8s;
+      }
+      @keyframes preloader_1 {
+          0% {height:5px;transform:translateY(0px);background:#9b59b6;}
+          25% {height:30px;transform:translateY(15px);background:#3498db;}
+          50% {height:5px;transform:translateY(0px);background:#9b59b6;}
+          100% {height:5px;transform:translateY(0px);background:#9b59b6;}
+      }</style><title>hello-mui</title><link href=./static/css/app.a4d10d662c2364e544542a35776f8566.css rel=stylesheet></head><body><div id=app><div class=fixedcenter><div class=mid><div id=preloader_1><span></span> <span></span> <span></span> <span></span> <span></span></div></div></div></div><script src=./static/utils/jquery.js type=text/javascript charset=utf-8></script><script src=./static/utils/mui.js type=text/javascript charset=utf-8></script><script src=./static/utils/mui.picker.min.js type=text/javascript charset=utf-8></script><script src=./static/utils/mui.poppicker.js type=text/javascript charset=utf-8></script><script type=text/javascript src=./static/js/manifest.50e9565abdb50171f3ab.js></script><script type=text/javascript src=./static/js/vendor.4fc29e3963db097b21a2.js></script><script type=text/javascript src=./static/js/app.08b330d58128b4733182.js></script></body></html>

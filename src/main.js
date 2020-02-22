@@ -9,7 +9,7 @@ import axios from "axios"	/* 异步请求*/
 */
 
 import { Tree, Button } from 'element-ui';/*饿了么ui*/
-import 'element-ui/lib/theme-chalk/index.css';
+// import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(Tree);/*使用树控件*/
 Vue.use(Button);
 
@@ -40,7 +40,8 @@ import router from './router'  /*建议将router引用放到最后*/
 
 
 import global from './components/assembly/globalComponent'
-
+import pages from './components/assembly/pagination'
+Vue.component('pages',pages);//因为有些页面用的不是pagination,所以再注册一次
 
 import '../static/utils/selectFilter.js'		/*下拉选择框*/
 import '../static/css/selectFilter.css'
@@ -99,7 +100,6 @@ Vue.prototype.bus = new Vue()
 Vue.config.productionTip = false
 
 
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
